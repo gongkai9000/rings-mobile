@@ -1,0 +1,7 @@
+D:\c#\drmobile\DRM.Entity\bin\Release\DRM.Entity.dll.config
+D:\c#\drmobile\DRM.Entity\bin\Release\DRM.Entity.dll
+D:\c#\drmobile\DRM.Entity\bin\Release\DRM.Entity.pdb
+D:\c#\drmobile\DRM.Entity\obj\Release\DRM.Entity.csproj.AssemblyReference.cache
+D:\c#\drmobile\DRM.Entity\obj\Release\DRM.Entity.csproj.CoreCompileInputs.cache
+D:\c#\drmobile\DRM.Entity\obj\Release\DRM.Entity.dll
+D:\c#\drmobile\DRM.Entity\obj\Release\DRM.Entity.pdb

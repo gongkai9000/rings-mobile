@@ -1,0 +1,178 @@
+*{margin:0;padding:0}
+li{list-style:none}
+a{text-decoration:none}
+img{border:none}
+body{font-family:"微软雅黑"}
+i{font-style:normal}
+.fl{float:left}
+.fr{float:right}
+.clear{clear:both}
+
+
+/*主首页页面*/
+/*主首页头部*/
+.all_top{margin:16px 20px;overflow:hidden;line-height:30px}
+.alltop_fl{float:left}
+.alltop_fr{float:right;font-size:15px;color:#7f7f7f}
+
+
+/*首页页面*/
+/*首页头部（全部）*/
+.top{padding:7px 0 0 16px;height:37px;border-bottom:1px solid #e0e0e0}
+.top_fl{float:left}
+.top_fr{float:right}
+.top_fr a{display:block;background:url(../images/f.jpg) no-repeat;width:23px;height:22px;float:left;padding-left:19px}
+.top_fr .xiaonen{background:url(../images/1.jpg) no-repeat;width:77px;height:23px;}
+.top_fr .fr_b2{background-position:0 -22px}
+.top_fr .fr_b3{background-position:0 -44px}
+
+/*产品列表页面*/
+.fhx{height:40px;border-bottom:1px solid #e0e0e0;line-height:40px;padding-left:16px;text-align:center}
+.fhx a{display:block;background:url(../images/left.jpg) no-repeat left;padding-left:22px;font-size:14px;color:#999;float:left}
+.fhx span{font-size:14px;color:#999;margin-left:-64px}
+
+
+/*底部ul*/
+.foot_ul{height:44px;line-height:44px;background:#fad5cb}
+.foot_ul li{float:left;margin:0 1%}
+.foot_ul li a{font-size:14px;color:#333}
+.foot_ul .ful_sp{float:right;background:url(../images/top.jpg) no-repeat right;margin-right:15px;width:40px}
+.foot_ul .ful_zx{background:url(../images/1.png) no-repeat left;float:right}
+.foot_ul .ful_zx a{padding-left:30px;color:#7a7a7a}
+/*底部*/
+.footer{background:#fef3f0;height:110px;padding-top:20px;text-align:center}
+.footer p{font-size:12px;color:#999;margin-top:20px}
+
+
+/*收货地址页面*/
+/*边框外*/
+.dl_corent{background:#fef3f0;padding:10px;font-size:14px}
+/*边框*/
+.border{border:1px solid #ebebeb;border-radius:5px;padding:10px;background:#fff;overflow:hidden;color:#4c4c4c;margin-bottom:10px}
+.border a{display:block}
+.border p{line-height:26px;color:#4c4c4c}
+.border span{padding-left:20px}
+.ipt_5{vertical-align:middle}
+.border .ljt{display:inline-block;background:url(../images/ljt.jpg) no-repeat;width:20px;height:23px;vertical-align:middle;margin-left:10px}
+/*文字地方*/
+.new_ad{height:30px;line-height:20px;color:#4c4c4c;padding-left:10px}
+.new_ad span{color:#ff0000}
+/*新地址选择*/
+.border select{width:100%;border-radius:5px;border:1px solid #ebebeb;margin-bottom:10px;font-family:"微软雅黑";height:42px;line-height:42px;padding-left:1%;display:block}
+.border label{padding-left:5px;vertical-align:middle;display:inline-block;cursor:pointer;margin-right:15px}
+.border textarea{width:99%;height:58px;border-radius:5px;border:1px solid #ebebeb;color:#000;font-size:14px;padding-top:14px;font-family:"微软雅黑";resize:none;margin-bottom:10px;padding-left:1%}
+.ipt_3{width:98%;border-radius:5px;border:1px solid #ebebeb;font-family:"微软雅黑";padding:12px 0 12px 2%;color:#000;margin-bottom:10px}
+.button{height:36px;background:#fb9d85;border:1px solid #ea9881;border-radius:5px;line-height:36px;text-align:center;color:#fff;font-size:18px;cursor:pointer;margin:10px 0}
+.button a{color:#fff;display:block}
+/*售后服务页面*/
+/*售后内容*/
+.as_left{float:left;margin:28px 0}
+.as_right{float:left;margin-left:12px}
+/*售后更改选项*/
+.af_choose{margin:10px 0}
+
+
+/*个人订单页面*/
+/*特殊border*/
+.sp_border{padding:10px 0;font-size:14px}
+/*特殊border上面*/
+.bor_h{border-bottom:1px solid #ebe0dd}
+.bor_h span{color:#ccc;padding-left:10px}
+.bor_h i{color:#4c4c4c}
+/*特殊border下面*/
+.bor_f{padding:0 10px;color:#4c4c4c;margin-top:10px}
+/*物流信息*/
+.wl_list li{height:48px;background:url(../images/dd.jpg) no-repeat left}
+.the_time{color:#999;font-size:12px;padding-left:30px;padding-top:4px}
+.wl_list p{padding-left:30px}
+/*订单信息*/
+.theo_border{padding-top:10px;font-size:14px;border:1px solid #ebebeb;border-radius:5px;background:#fff;overflow:hidden;color:#4c4c4c;border-bottom:0;margin-bottom:10px}
+.xx_left{float:left;margin:22px 0;padding-left:10px}
+.xx_right{float:left;margin-left:12px;margin-top:8px}
+.xx_right span{color:#ff0000;padding:0}
+/*table样式*/
+.tab_t{clear:both;width:100%}
+.tab_t td{border:1px solid #ebebeb;height:29px;border-right:0;text-align:center;width:25%}
+.tabs_td .teshu_td,.tabp_td .teshu_td{border-left:0}
+.tab_t .tabs_td td{border-bottom:0}
+.del{display:inline-block;background:url(../images/del.jpg) no-repeat;width:12px;height:14px}
+
+/*购物车页面*/
+.the_word{color:#ccc;font-size:14px;padding-left:10px;margin-bottom:10px}
+
+/*购物车页面2*/
+/*协议页*/
+.contract{border:3px solid #faf5ef;position:relative;padding:22px 18px;}
+/*四个角定位*/
+.contract-top,.contract-tright,.contract-bottom,.contract-bright{position:absolute;height:24px;width:26px;background:url(../images/p1.jpg) no-repeat}
+.contract-top{background-position:0px;top:-6px;left:-6px}
+.contract-tright{background-position:-26px;top:-6px;right:-6px}
+.contract-bottom{background-position:-52px;bottom:-6px;left:-6px}
+.contract-bright{background-position:-78px;bottom:-6px;right:-6px}
+
+.the_xy{text-align:center;margin-bottom:25px}
+.to_love{margin:10px 0}
+.to_love p{color:#808080}
+.or_button{background:#fb9e86}
+
+/*购物车页面end*/
+.bt_top{overflow:hidden;margin:20px 0}
+.bt_top img{float:left;padding-top:8px;padding-right:8px}
+.bt_top p{font-size:20px}
+
+
+/*会员中心*/
+.border .to-right{padding:0}
+.to-right{float:right;background:url(../images/right.jpg) no-repeat;width:11px;height:21px}
+
+/*信息列表*/
+.mem_list{border:1px solid #ebebeb;border-radius:5px;background:#fff;overflow:hidden;color:#4c4c4c;margin-bottom:10px;border-bottom:none}
+.mem_list li{height:42px;line-height:42px;border-bottom:1px solid #ebebeb}
+.mem_list a{color:#333;font-size:16px;padding-left:10px;display:block}
+.mem_list .to-right{margin:11px 10px}
+
+/*我的信息页面*/
+.thew_wod{height:50px;line-height:48px;padding-left:2%}
+.thew_wod span{padding:0 10px 0 0}
+
+/*验证页面*/
+.qtw_top{margin-bottom:20px;text-align:center}
+h5{color:#333;font-size:18px;font-weight:100;text-align:center}
+.qtw_top p{color:#7f7f7f}
+/*空盒子 为了页面美观*/
+.onl_to{height:40px}
+
+/*没购买记录页面*/
+.yz_false{margin:24px 0;overflow:hidden}
+.yz_false p{margin:15px 0 50px 0}
+.yz_false span{float:right;padding-right:6px}
+/*注册选择*/
+.quick_dl{margin-top:26px}
+.quick_dl a{display:inline;color:#fdbdaf;text-decoration:underline}
+/*挑选或者分享*/
+.shareor{text-align:center;margin-top:26px}
+.shareor a{text-align:center;height:36px;width:40%;border:1px solid #ea9881;background:#fba088;display:inline-block;line-height:36px;color:#fff;font-size:18px;margin-right:8px;border-radius:5px}
+
+
+/*注册页面*/
+.login_it span{display:inline-block;height:42px;width:38%;text-align:center;background:#d9d5ce;color:#fff;line-height:42px;margin-left:1%;border-radius:5px}
+.ipt_4{width:58%;border-radius:5px;border:1px solid #ebebeb;font-family:"微软雅黑";padding:12px 0 12px 2%;color:#000;margin-bottom:10px}
+.login_it p{padding-left:2px;color:#999;font-size:16px}
+.login_it a{color:#333;text-decoration:underline}
+/*忘记密码*/
+.forget{overflow:hidden}
+.forget p{float:left}
+.login_it .password{float:right;padding-right:2px;text-decoration:none;font-size:16px}
+/*出错条*/
+.wrong{height:30px;line-height:30px;background:#fdd1c5}
+.wrong p{background:url(../images/wrong.jpg) no-repeat right 10px center;padding:0 20px;color:#fff;font-size:14px}
+
+
+/*登陆页面*/
+.ipt_2{width:80%;border-radius:5px;border:1px solid #ebebeb;font-family:"微软雅黑";padding:12px 0 12px 64px;color:#000;margin-bottom:10px;background:url(../images/pop.jpg) no-repeat left;background-color:#fff}
+.ipt_6{width:80%;border-radius:5px;border:1px solid #ebebeb;font-family:"微软雅黑";padding:12px 0 12px 64px;color:#000;vertical-align:middle;margin-bottom:10px;background:url(../images/password.jpg) no-repeat left;background-color:#fff}
+/*登陆空白地方*/
+.entr_dl{margin-bottom:80px}
+
+
+.no_data{height:100px;line-height:100px;text-align:center;}

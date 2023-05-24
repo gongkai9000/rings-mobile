@@ -1,0 +1,2890 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DarryJewelryModelStoreContainer" CdmEntityContainer="DarryJewelryEntities">
+    <EntitySetMapping Name="BrandTopic">
+      <EntityTypeMapping TypeName="DarryJewelryModel.BrandTopic">
+        <MappingFragment StoreEntitySet="BrandTopic">
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="tag" ColumnName="tag" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="thumbnail" ColumnName="thumbnail" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="customUrl" ColumnName="customUrl" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BrandTopicProperty">
+      <EntityTypeMapping TypeName="DarryJewelryModel.BrandTopicProperty">
+        <MappingFragment StoreEntitySet="BrandTopicProperty">
+          <ScalarProperty Name="sortId" ColumnName="sortId" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="key" ColumnName="key" />
+          <ScalarProperty Name="itemId" ColumnName="itemId" />
+          <ScalarProperty Name="spaceId" ColumnName="spaceId" />
+          <ScalarProperty Name="spaceType" ColumnName="spaceType" />
+          <ScalarProperty Name="brandTopicId" ColumnName="brandTopicId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DiyProduct">
+      <EntityTypeMapping TypeName="DarryJewelryModel.DiyProduct">
+        <MappingFragment StoreEntitySet="DiyProduct">
+          <ScalarProperty Name="GroupDPID" ColumnName="GroupDPID" />
+          <ScalarProperty Name="DiamondId" ColumnName="DiamondId" />
+          <ScalarProperty Name="MemberPrice" ColumnName="MemberPrice" />
+          <ScalarProperty Name="BasePID" ColumnName="BasePID" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DiyRingcare">
+      <EntityTypeMapping TypeName="DarryJewelryModel.DiyRingcare">
+        <MappingFragment StoreEntitySet="DiyRingcare">
+          <ScalarProperty Name="productId" ColumnName="productId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Favorites">
+      <EntityTypeMapping TypeName="DarryJewelryModel.Favorites">
+        <MappingFragment StoreEntitySet="Favorites">
+          <ScalarProperty Name="myParms" ColumnName="myParms" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="memberid" ColumnName="memberid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Feedback">
+      <EntityTypeMapping TypeName="DarryJewelryModel.Feedback">
+        <MappingFragment StoreEntitySet="Feedback">
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Goods">
+      <EntityTypeMapping TypeName="DarryJewelryModel.Goods">
+        <MappingFragment StoreEntitySet="Goods">
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="goodsTypeId" ColumnName="goodsTypeId" />
+          <ScalarProperty Name="goodsName" ColumnName="goodsName" />
+          <ScalarProperty Name="goodsNo" ColumnName="goodsNo" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GoodsPropertyValue">
+      <EntityTypeMapping TypeName="DarryJewelryModel.GoodsPropertyValue">
+        <MappingFragment StoreEntitySet="GoodsPropertyValue">
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="goodsTypePropertyId" ColumnName="goodsTypePropertyId" />
+          <ScalarProperty Name="goodsId" ColumnName="goodsId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GoodsType">
+      <EntityTypeMapping TypeName="DarryJewelryModel.GoodsType">
+        <MappingFragment StoreEntitySet="GoodsType">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GoodsTypeProperty">
+      <EntityTypeMapping TypeName="DarryJewelryModel.GoodsTypeProperty">
+        <MappingFragment StoreEntitySet="GoodsTypeProperty">
+          <ScalarProperty Name="isNULL" ColumnName="isNULL" />
+          <ScalarProperty Name="PropertyTypeId" ColumnName="PropertyTypeId" />
+          <ScalarProperty Name="Property" ColumnName="Property" />
+          <ScalarProperty Name="GoodsTypeId" ColumnName="GoodsTypeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inventory">
+      <EntityTypeMapping TypeName="DarryJewelryModel.Inventory">
+        <MappingFragment StoreEntitySet="Inventory">
+          <ScalarProperty Name="GIA" ColumnName="GIA" />
+          <ScalarProperty Name="modify_date" ColumnName="modify_date" />
+          <ScalarProperty Name="modify_by" ColumnName="modify_by" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="create_by" ColumnName="create_by" />
+          <ScalarProperty Name="storehouseId" ColumnName="storehouseId" />
+          <ScalarProperty Name="stockcode" ColumnName="stockcode" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="goodsId" ColumnName="goodsId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventoryLog">
+      <EntityTypeMapping TypeName="DarryJewelryModel.InventoryLog">
+        <MappingFragment StoreEntitySet="InventoryLog">
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="action" ColumnName="action" />
+          <ScalarProperty Name="realname" ColumnName="realname" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="inventoryId" ColumnName="inventoryId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Material">
+      <EntityTypeMapping TypeName="DarryJewelryModel.Material">
+        <MappingFragment StoreEntitySet="Material">
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Measure">
+      <EntityTypeMapping TypeName="DarryJewelryModel.Measure">
+        <MappingFragment StoreEntitySet="Measure">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderExcel">
+      <EntityTypeMapping TypeName="DarryJewelryModel.OrderExcel">
+        <MappingFragment StoreEntitySet="OrderExcel">
+          <ScalarProperty Name="e_real_sale" ColumnName="e_real_sale" />
+          <ScalarProperty Name="e_sale" ColumnName="e_sale" />
+          <ScalarProperty Name="e_source" ColumnName="e_source" />
+          <ScalarProperty Name="e_OrderCode" ColumnName="e_OrderCode" />
+          <ScalarProperty Name="e_time" ColumnName="e_time" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OutStock">
+      <EntityTypeMapping TypeName="DarryJewelryModel.OutStock">
+        <MappingFragment StoreEntitySet="OutStock">
+          <ScalarProperty Name="modify_date" ColumnName="modify_date" />
+          <ScalarProperty Name="modify_by" ColumnName="modify_by" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="create_by" ColumnName="create_by" />
+          <ScalarProperty Name="StockType" ColumnName="StockType" />
+          <ScalarProperty Name="StockNum" ColumnName="StockNum" />
+          <ScalarProperty Name="GoodTypeId" ColumnName="GoodTypeId" />
+          <ScalarProperty Name="GoodId" ColumnName="GoodId" />
+          <ScalarProperty Name="OutCode" ColumnName="OutCode" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product">
+      <EntityTypeMapping TypeName="DarryJewelryModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="mobile_pcontent" ColumnName="mobile_pcontent" />
+          <ScalarProperty Name="clicknum" ColumnName="clicknum" />
+          <ScalarProperty Name="IsCustomPink" ColumnName="IsCustomPink" />
+          <ScalarProperty Name="IsCustomDiamond" ColumnName="IsCustomDiamond" />
+          <ScalarProperty Name="TJLZ" ColumnName="TJLZ" />
+          <ScalarProperty Name="fDiamondId" ColumnName="fDiamondId" />
+          <ScalarProperty Name="DiamondId" ColumnName="DiamondId" />
+          <ScalarProperty Name="CollectionId" ColumnName="CollectionId" />
+          <ScalarProperty Name="oldId" ColumnName="oldId" />
+          <ScalarProperty Name="salecount" ColumnName="salecount" />
+          <ScalarProperty Name="pSort" ColumnName="pSort" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="MemberPrice" ColumnName="MemberPrice" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="p_content" ColumnName="p_content" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="productTypeId" ColumnName="productTypeId" />
+          <ScalarProperty Name="productNo" ColumnName="productNo" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductGoodsRelationship">
+      <EntityTypeMapping TypeName="DarryJewelryModel.ProductGoodsRelationship">
+        <MappingFragment StoreEntitySet="ProductGoodsRelationship">
+          <ScalarProperty Name="goodsId" ColumnName="goodsId" />
+          <ScalarProperty Name="goodsTypeId" ColumnName="goodsTypeId" />
+          <ScalarProperty Name="productId" ColumnName="productId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductImgUrl">
+      <EntityTypeMapping TypeName="DarryJewelryModel.ProductImgUrl">
+        <MappingFragment StoreEntitySet="ProductImgUrl">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="imgurl" ColumnName="imgurl" />
+          <ScalarProperty Name="productId" ColumnName="productId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductType">
+      <EntityTypeMapping TypeName="DarryJewelryModel.ProductType">
+        <MappingFragment StoreEntitySet="ProductType">
+          <ScalarProperty Name="surl" ColumnName="surl" />
+          <ScalarProperty Name="purl" ColumnName="purl" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="imgurl" ColumnName="imgurl" />
+          <ScalarProperty Name="parentID" ColumnName="parentID" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PropertyType">
+      <EntityTypeMapping TypeName="DarryJewelryModel.PropertyType">
+        <MappingFragment StoreEntitySet="PropertyType">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PropertyTypeValue">
+      <EntityTypeMapping TypeName="DarryJewelryModel.PropertyTypeValue">
+        <MappingFragment StoreEntitySet="PropertyTypeValue">
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="PropertyTypeId" ColumnName="PropertyTypeId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Receipt">
+      <EntityTypeMapping TypeName="DarryJewelryModel.Receipt">
+        <MappingFragment StoreEntitySet="Receipt">
+          <ScalarProperty Name="supplier" ColumnName="supplier" />
+          <ScalarProperty Name="GIA" ColumnName="GIA" />
+          <ScalarProperty Name="addRealName" ColumnName="addRealName" />
+          <ScalarProperty Name="addUserName" ColumnName="addUserName" />
+          <ScalarProperty Name="addUserId" ColumnName="addUserId" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="goodsId" ColumnName="goodsId" />
+          <ScalarProperty Name="goodsNo" ColumnName="goodsNo" />
+          <ScalarProperty Name="goodsTypeName" ColumnName="goodsTypeName" />
+          <ScalarProperty Name="goodsTypeId" ColumnName="goodsTypeId" />
+          <ScalarProperty Name="storehouseId" ColumnName="storehouseId" />
+          <ScalarProperty Name="storehouse" ColumnName="storehouse" />
+          <ScalarProperty Name="action" ColumnName="action" />
+          <ScalarProperty Name="serialNo" ColumnName="serialNo" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Storehouse">
+      <EntityTypeMapping TypeName="DarryJewelryModel.Storehouse">
+        <MappingFragment StoreEntitySet="Storehouse">
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="storehouse1" ColumnName="storehouse" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Supplier">
+      <EntityTypeMapping TypeName="DarryJewelryModel.Supplier">
+        <MappingFragment StoreEntitySet="Supplier">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_AComment">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_AComment">
+        <MappingFragment StoreEntitySet="T_AComment">
+          <ScalarProperty Name="mcontemt" ColumnName="mcontemt" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="recontent" ColumnName="recontent" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="articleid" ColumnName="articleid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_activity">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_activity">
+        <MappingFragment StoreEntitySet="T_activity">
+          <ScalarProperty Name="artulr" ColumnName="artulr" />
+          <ScalarProperty Name="mimgurl" ColumnName="mimgurl" />
+          <ScalarProperty Name="No" ColumnName="No" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="joinPeople" ColumnName="joinPeople" />
+          <ScalarProperty Name="endTime" ColumnName="endTime" />
+          <ScalarProperty Name="startTime" ColumnName="startTime" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="actionContent" ColumnName="actionContent" />
+          <ScalarProperty Name="topic" ColumnName="topic" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Ad">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Ad">
+        <MappingFragment StoreEntitySet="T_Ad">
+          <ScalarProperty Name="display" ColumnName="display" />
+          <ScalarProperty Name="categoryid" ColumnName="categoryid" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="imageurl" ColumnName="imageurl" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_adImage">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_adImage">
+        <MappingFragment StoreEntitySet="T_adImage">
+          <ScalarProperty Name="tag3" ColumnName="tag3" />
+          <ScalarProperty Name="tag2" ColumnName="tag2" />
+          <ScalarProperty Name="tag1" ColumnName="tag1" />
+          <ScalarProperty Name="imgAlt" ColumnName="imgAlt" />
+          <ScalarProperty Name="imgcaption" ColumnName="imgcaption" />
+          <ScalarProperty Name="httpUrl" ColumnName="httpUrl" />
+          <ScalarProperty Name="imgUrl" ColumnName="imgUrl" />
+          <ScalarProperty Name="adCode" ColumnName="adCode" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_adment">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_adment">
+        <MappingFragment StoreEntitySet="T_adment">
+          <ScalarProperty Name="modifyDate" ColumnName="modifyDate" />
+          <ScalarProperty Name="modifyBy" ColumnName="modifyBy" />
+          <ScalarProperty Name="createDate" ColumnName="createDate" />
+          <ScalarProperty Name="createby" ColumnName="createby" />
+          <ScalarProperty Name="mark" ColumnName="mark" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="clickNum" ColumnName="clickNum" />
+          <ScalarProperty Name="adType" ColumnName="adType" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="AdCode" ColumnName="AdCode" />
+          <ScalarProperty Name="adimgId" ColumnName="adimgId" />
+          <ScalarProperty Name="adTitle" ColumnName="adTitle" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_adType">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_adType">
+        <MappingFragment StoreEntitySet="T_adType">
+          <ScalarProperty Name="updateDate" ColumnName="updateDate" />
+          <ScalarProperty Name="describe" ColumnName="describe" />
+          <ScalarProperty Name="typeName" ColumnName="typeName" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_ArtcleLink">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_ArtcleLink">
+        <MappingFragment StoreEntitySet="T_ArtcleLink">
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Article">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Article">
+        <MappingFragment StoreEntitySet="T_Article">
+          <ScalarProperty Name="sharenum" ColumnName="sharenum" />
+          <ScalarProperty Name="imgurl" ColumnName="imgurl" />
+          <ScalarProperty Name="love" ColumnName="love" />
+          <ScalarProperty Name="source" ColumnName="source" />
+          <ScalarProperty Name="desciption" ColumnName="desciption" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="click" ColumnName="click" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="hot" ColumnName="hot" />
+          <ScalarProperty Name="mcontemt" ColumnName="mcontemt" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="classid" ColumnName="classid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_ArticleType">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_ArticleType">
+        <MappingFragment StoreEntitySet="T_ArticleType">
+          <ScalarProperty Name="des" ColumnName="des" />
+          <ScalarProperty Name="seotitle" ColumnName="seotitle" />
+          <ScalarProperty Name="keyword" ColumnName="keyword" />
+          <ScalarProperty Name="Flink" ColumnName="Flink" />
+          <ScalarProperty Name="atype" ColumnName="atype" />
+          <ScalarProperty Name="Addtime" ColumnName="Addtime" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Card">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Card">
+        <MappingFragment StoreEntitySet="T_Card">
+          <ScalarProperty Name="mem_id" ColumnName="mem_id" />
+          <ScalarProperty Name="index_img" ColumnName="index_img" />
+          <ScalarProperty Name="is_show" ColumnName="is_show" />
+          <ScalarProperty Name="candy_sum" ColumnName="candy_sum" />
+          <ScalarProperty Name="candy_num" ColumnName="candy_num" />
+          <ScalarProperty Name="album_id" ColumnName="album_id" />
+          <ScalarProperty Name="detail_addr" ColumnName="detail_addr" />
+          <ScalarProperty Name="hotel_time" ColumnName="hotel_time" />
+          <ScalarProperty Name="hotel_addr" ColumnName="hotel_addr" />
+          <ScalarProperty Name="marry_time" ColumnName="marry_time" />
+          <ScalarProperty Name="card_id" ColumnName="card_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Cart">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Cart">
+        <MappingFragment StoreEntitySet="T_Cart">
+          <ScalarProperty Name="appid" ColumnName="appid" />
+          <ScalarProperty Name="sirName" ColumnName="sirName" />
+          <ScalarProperty Name="sirCode" ColumnName="sirCode" />
+          <ScalarProperty Name="isNewWeb" ColumnName="isNewWeb" />
+          <ScalarProperty Name="fDiamondId" ColumnName="fDiamondId" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="fontstyle" ColumnName="fontstyle" />
+          <ScalarProperty Name="handsize" ColumnName="handsize" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="SumMember" ColumnName="SumMember" />
+          <ScalarProperty Name="Sum" ColumnName="Sum" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="DiamondPrice" ColumnName="DiamondPrice" />
+          <ScalarProperty Name="MemberPrice" ColumnName="MemberPrice" />
+          <ScalarProperty Name="ProductImg" ColumnName="ProductImg" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="DiamondId" ColumnName="DiamondId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="CookieId" ColumnName="CookieId" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Category">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Category">
+        <MappingFragment StoreEntitySet="T_Category">
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="parentid" ColumnName="parentid" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_CategoryBAK">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_CategoryBAK">
+        <MappingFragment StoreEntitySet="T_CategoryBAK">
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="parentid" ColumnName="parentid" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Comment">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Comment">
+        <MappingFragment StoreEntitySet="T_Comment">
+          <ScalarProperty Name="isZp" ColumnName="isZp" />
+          <ScalarProperty Name="orderDetailId" ColumnName="orderDetailId" />
+          <ScalarProperty Name="Evaluation" ColumnName="Evaluation" />
+          <ScalarProperty Name="satisfaction" ColumnName="satisfaction" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="orderid" ColumnName="orderid" />
+          <ScalarProperty Name="readdtime" ColumnName="readdtime" />
+          <ScalarProperty Name="reply" ColumnName="reply" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="postip" ColumnName="postip" />
+          <ScalarProperty Name="recontent" ColumnName="recontent" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Comquestion">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Comquestion">
+        <MappingFragment StoreEntitySet="T_Comquestion">
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="no" ColumnName="no" />
+          <ScalarProperty Name="yes" ColumnName="yes" />
+          <ScalarProperty Name="ask" ColumnName="ask" />
+          <ScalarProperty Name="question" ColumnName="question" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Config">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Config">
+        <MappingFragment StoreEntitySet="T_Config">
+          <ScalarProperty Name="BirthdayMail" ColumnName="BirthdayMail" />
+          <ScalarProperty Name="ordermail" ColumnName="ordermail" />
+          <ScalarProperty Name="priceformat" ColumnName="priceformat" />
+          <ScalarProperty Name="titleformat" ColumnName="titleformat" />
+          <ScalarProperty Name="YongJin5" ColumnName="YongJin5" />
+          <ScalarProperty Name="YongJin4" ColumnName="YongJin4" />
+          <ScalarProperty Name="YongJin3" ColumnName="YongJin3" />
+          <ScalarProperty Name="YongJin2" ColumnName="YongJin2" />
+          <ScalarProperty Name="YongJin1" ColumnName="YongJin1" />
+          <ScalarProperty Name="payedu" ColumnName="payedu" />
+          <ScalarProperty Name="jmslock" ColumnName="jmslock" />
+          <ScalarProperty Name="sitename" ColumnName="sitename" />
+          <ScalarProperty Name="siteurl" ColumnName="siteurl" />
+          <ScalarProperty Name="Point2JiFen" ColumnName="Point2JiFen" />
+          <ScalarProperty Name="Point2" ColumnName="Point2" />
+          <ScalarProperty Name="Point" ColumnName="Point" />
+          <ScalarProperty Name="GetPwdNotice" ColumnName="GetPwdNotice" />
+          <ScalarProperty Name="GetPwdNoticeTitle" ColumnName="GetPwdNoticeTitle" />
+          <ScalarProperty Name="Smtp_Smtp" ColumnName="Smtp_Smtp" />
+          <ScalarProperty Name="Smtp_From" ColumnName="Smtp_From" />
+          <ScalarProperty Name="Smtp_PassWord" ColumnName="Smtp_PassWord" />
+          <ScalarProperty Name="Smtp_UserName" ColumnName="Smtp_UserName" />
+          <ScalarProperty Name="Smtp_Port" ColumnName="Smtp_Port" />
+          <ScalarProperty Name="Smtp_Encoding" ColumnName="Smtp_Encoding" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Config_Bank">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Config_Bank">
+        <MappingFragment StoreEntitySet="T_Config_Bank">
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Config_Fee">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Config_Fee">
+        <MappingFragment StoreEntitySet="T_Config_Fee">
+          <ScalarProperty Name="Fee" ColumnName="Fee" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Config_Time">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Config_Time">
+        <MappingFragment StoreEntitySet="T_Config_Time">
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Config_YQ">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Config_YQ">
+        <MappingFragment StoreEntitySet="T_Config_YQ">
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Configuration">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Configuration">
+        <MappingFragment StoreEntitySet="T_Configuration">
+          <ScalarProperty Name="Config_Value" ColumnName="Config_Value" />
+          <ScalarProperty Name="Config_Key" ColumnName="Config_Key" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_ContentCategory">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_ContentCategory">
+        <MappingFragment StoreEntitySet="T_ContentCategory">
+          <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+          <ScalarProperty Name="CategoryDesc" ColumnName="CategoryDesc" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_CotentList">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_CotentList">
+        <MappingFragment StoreEntitySet="T_CotentList">
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="newsid" ColumnName="newsid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_CountIp">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_CountIp">
+        <MappingFragment StoreEntitySet="T_CountIp">
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="lastdate" ColumnName="lastdate" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="IpName" ColumnName="IpName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DarryComment">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_DarryComment">
+        <MappingFragment StoreEntitySet="T_DarryComment">
+          <ScalarProperty Name="DarryCommentPostIp" ColumnName="DarryCommentPostIp" />
+          <ScalarProperty Name="DarryCommentAddtime" ColumnName="DarryCommentAddtime" />
+          <ScalarProperty Name="DarryCommentEmail" ColumnName="DarryCommentEmail" />
+          <ScalarProperty Name="DarryCommentContent" ColumnName="DarryCommentContent" />
+          <ScalarProperty Name="DarryCommentTitle" ColumnName="DarryCommentTitle" />
+          <ScalarProperty Name="DarryCommentMemberId" ColumnName="DarryCommentMemberId" />
+          <ScalarProperty Name="DarryCommentId" ColumnName="DarryCommentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DarryHome">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_DarryHome">
+        <MappingFragment StoreEntitySet="T_DarryHome">
+          <ScalarProperty Name="DarryHomeIDCardMd5" ColumnName="DarryHomeIDCardMd5" />
+          <ScalarProperty Name="DarryHomeProductImg" ColumnName="DarryHomeProductImg" />
+          <ScalarProperty Name="DarryHomeMusicUrl" ColumnName="DarryHomeMusicUrl" />
+          <ScalarProperty Name="DarryHomeBgPhoto" ColumnName="DarryHomeBgPhoto" />
+          <ScalarProperty Name="DarryHomePhoto" ColumnName="DarryHomePhoto" />
+          <ScalarProperty Name="DarryHomeCode" ColumnName="DarryHomeCode" />
+          <ScalarProperty Name="DarryHomeContent" ColumnName="DarryHomeContent" />
+          <ScalarProperty Name="DarryHomeMsName" ColumnName="DarryHomeMsName" />
+          <ScalarProperty Name="DarryHomeMemberTitle" ColumnName="DarryHomeMemberTitle" />
+          <ScalarProperty Name="DarryHomeDate" ColumnName="DarryHomeDate" />
+          <ScalarProperty Name="DarryHomeIsBit" ColumnName="DarryHomeIsBit" />
+          <ScalarProperty Name="DarryHomeOrderId" ColumnName="DarryHomeOrderId" />
+          <ScalarProperty Name="DarryHomeIDCard" ColumnName="DarryHomeIDCard" />
+          <ScalarProperty Name="DarryHomeNationality" ColumnName="DarryHomeNationality" />
+          <ScalarProperty Name="DarryHomeMemberName" ColumnName="DarryHomeMemberName" />
+          <ScalarProperty Name="DarryHomeMemberId" ColumnName="DarryHomeMemberId" />
+          <ScalarProperty Name="DarryHomeId" ColumnName="DarryHomeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DarryMsg">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_DarryMsg">
+        <MappingFragment StoreEntitySet="T_DarryMsg">
+          <ScalarProperty Name="DarryMsgReAddtime" ColumnName="DarryMsgReAddtime" />
+          <ScalarProperty Name="DiySearchId" ColumnName="DiySearchId" />
+          <ScalarProperty Name="DarryMsgReply" ColumnName="DarryMsgReply" />
+          <ScalarProperty Name="DarryMsgUserName" ColumnName="DarryMsgUserName" />
+          <ScalarProperty Name="DarryMsgPostip" ColumnName="DarryMsgPostip" />
+          <ScalarProperty Name="DarryMsgAddtime" ColumnName="DarryMsgAddtime" />
+          <ScalarProperty Name="DarryMsgContent" ColumnName="DarryMsgContent" />
+          <ScalarProperty Name="DarryMsgId" ColumnName="DarryMsgId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Diamonds">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Diamonds">
+        <MappingFragment StoreEntitySet="T_Diamonds">
+          <ScalarProperty Name="stocknumber" ColumnName="stocknumber" />
+          <ScalarProperty Name="oldId" ColumnName="oldId" />
+          <ScalarProperty Name="batch" ColumnName="batch" />
+          <ScalarProperty Name="protype" ColumnName="protype" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="fluorescence" ColumnName="fluorescence" />
+          <ScalarProperty Name="culet" ColumnName="culet" />
+          <ScalarProperty Name="girdle" ColumnName="girdle" />
+          <ScalarProperty Name="depth" ColumnName="depth" />
+          <ScalarProperty Name="d_table" ColumnName="d_table" />
+          <ScalarProperty Name="measurements" ColumnName="measurements" />
+          <ScalarProperty Name="cut" ColumnName="cut" />
+          <ScalarProperty Name="symmetry" ColumnName="symmetry" />
+          <ScalarProperty Name="polish" ColumnName="polish" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="clarity" ColumnName="clarity" />
+          <ScalarProperty Name="carat" ColumnName="carat" />
+          <ScalarProperty Name="d_code" ColumnName="d_code" />
+          <ScalarProperty Name="d_type" ColumnName="d_type" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="shape" ColumnName="shape" />
+          <ScalarProperty Name="memberprice" ColumnName="memberprice" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DiySearch">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_DiySearch">
+        <MappingFragment StoreEntitySet="T_DiySearch">
+          <ScalarProperty Name="zan" ColumnName="zan" />
+          <ScalarProperty Name="SheName" ColumnName="SheName" />
+          <ScalarProperty Name="musicurl" ColumnName="musicurl" />
+          <ScalarProperty Name="idcard" ColumnName="idcard" />
+          <ScalarProperty Name="qq" ColumnName="qq" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="imgurl" ColumnName="imgurl" />
+          <ScalarProperty Name="diydate" ColumnName="diydate" />
+          <ScalarProperty Name="diamondcode" ColumnName="diamondcode" />
+          <ScalarProperty Name="ringcode" ColumnName="ringcode" />
+          <ScalarProperty Name="specialday" ColumnName="specialday" />
+          <ScalarProperty Name="objbirthday" ColumnName="objbirthday" />
+          <ScalarProperty Name="birthday" ColumnName="birthday" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="realname" ColumnName="realname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DrMan">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_DrMan">
+        <MappingFragment StoreEntitySet="T_DrMan">
+          <ScalarProperty Name="fno" ColumnName="fno" />
+          <ScalarProperty Name="fyes" ColumnName="fyes" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="timu" ColumnName="timu" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Edm">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Edm">
+        <MappingFragment StoreEntitySet="T_Edm">
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="cate" ColumnName="cate" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="telephone" ColumnName="telephone" />
+          <ScalarProperty Name="postip" ColumnName="postip" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_EmailResult">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_EmailResult">
+        <MappingFragment StoreEntitySet="T_EmailResult">
+          <ScalarProperty Name="AddTime" ColumnName="AddTime" />
+          <ScalarProperty Name="OtherSug" ColumnName="OtherSug" />
+          <ScalarProperty Name="satisfiedTra" ColumnName="satisfiedTra" />
+          <ScalarProperty Name="satisfiedPro" ColumnName="satisfiedPro" />
+          <ScalarProperty Name="satisfiedWeb" ColumnName="satisfiedWeb" />
+          <ScalarProperty Name="satisfiedCus" ColumnName="satisfiedCus" />
+          <ScalarProperty Name="knowDr" ColumnName="knowDr" />
+          <ScalarProperty Name="OrderCus" ColumnName="OrderCus" />
+          <ScalarProperty Name="OrderAccept" ColumnName="OrderAccept" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="SendType" ColumnName="SendType" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Fee">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Fee">
+        <MappingFragment StoreEntitySet="T_Fee">
+          <ScalarProperty Name="jiage" ColumnName="jiage" />
+          <ScalarProperty Name="Bank" ColumnName="Bank" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FriendlyLink">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_FriendlyLink">
+        <MappingFragment StoreEntitySet="T_FriendlyLink">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Guest">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Guest">
+        <MappingFragment StoreEntitySet="T_Guest">
+          <ScalarProperty Name="display" ColumnName="display" />
+          <ScalarProperty Name="reply" ColumnName="reply" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="postip" ColumnName="postip" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_HandSize">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_HandSize">
+        <MappingFragment StoreEntitySet="T_HandSize">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="material" ColumnName="material" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="handsize" ColumnName="handsize" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Hodliday">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Hodliday">
+        <MappingFragment StoreEntitySet="T_Hodliday">
+          <ScalarProperty Name="link" ColumnName="link" />
+          <ScalarProperty Name="zx4" ColumnName="zx4" />
+          <ScalarProperty Name="zx3" ColumnName="zx3" />
+          <ScalarProperty Name="zx2" ColumnName="zx2" />
+          <ScalarProperty Name="zx1" ColumnName="zx1" />
+          <ScalarProperty Name="proId" ColumnName="proId" />
+          <ScalarProperty Name="artdesc" ColumnName="artdesc" />
+          <ScalarProperty Name="arttitle" ColumnName="arttitle" />
+          <ScalarProperty Name="zt" ColumnName="zt" />
+          <ScalarProperty Name="adpic" ColumnName="adpic" />
+          <ScalarProperty Name="banner" ColumnName="banner" />
+          <ScalarProperty Name="backimg" ColumnName="backimg" />
+          <ScalarProperty Name="smpic" ColumnName="smpic" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="descation" ColumnName="descation" />
+          <ScalarProperty Name="keyword" ColumnName="keyword" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_IpPromontion">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_IpPromontion">
+        <MappingFragment StoreEntitySet="T_IpPromontion">
+          <ScalarProperty Name="numcode" ColumnName="numcode" />
+          <ScalarProperty Name="article" ColumnName="article" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_KfOnline">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_KfOnline">
+        <MappingFragment StoreEntitySet="T_KfOnline">
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="display" ColumnName="display" />
+          <ScalarProperty Name="Skype" ColumnName="Skype" />
+          <ScalarProperty Name="Msn" ColumnName="Msn" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Link">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Link">
+        <MappingFragment StoreEntitySet="T_Link">
+          <ScalarProperty Name="imgurl" ColumnName="imgurl" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Loveletter">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Loveletter">
+        <MappingFragment StoreEntitySet="T_Loveletter">
+          <ScalarProperty Name="LoveletterZhuan" ColumnName="LoveletterZhuan" />
+          <ScalarProperty Name="LoveletterZan" ColumnName="LoveletterZan" />
+          <ScalarProperty Name="LoveletterRandom" ColumnName="LoveletterRandom" />
+          <ScalarProperty Name="LoveletterDate" ColumnName="LoveletterDate" />
+          <ScalarProperty Name="LoveletterThree" ColumnName="LoveletterThree" />
+          <ScalarProperty Name="LoveletterTwo" ColumnName="LoveletterTwo" />
+          <ScalarProperty Name="LoveletterOne" ColumnName="LoveletterOne" />
+          <ScalarProperty Name="LoveletterName" ColumnName="LoveletterName" />
+          <ScalarProperty Name="LoveletterImage" ColumnName="LoveletterImage" />
+          <ScalarProperty Name="LoveletterUserId" ColumnName="LoveletterUserId" />
+          <ScalarProperty Name="LoveletterID" ColumnName="LoveletterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_LoveMap">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_LoveMap">
+        <MappingFragment StoreEntitySet="T_LoveMap">
+          <ScalarProperty Name="MapDate" ColumnName="MapDate" />
+          <ScalarProperty Name="MapIp" ColumnName="MapIp" />
+          <ScalarProperty Name="Maplat" ColumnName="Maplat" />
+          <ScalarProperty Name="Maplng" ColumnName="Maplng" />
+          <ScalarProperty Name="MapCon" ColumnName="MapCon" />
+          <ScalarProperty Name="MapName" ColumnName="MapName" />
+          <ScalarProperty Name="MapId" ColumnName="MapId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_LoveZhan">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_LoveZhan">
+        <MappingFragment StoreEntitySet="T_LoveZhan">
+          <ScalarProperty Name="ZhanDate" ColumnName="ZhanDate" />
+          <ScalarProperty Name="ZhanIp" ColumnName="ZhanIp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_mail">
+      <EntityTypeMapping TypeName="DarryJewelryModel.t_mail">
+        <MappingFragment StoreEntitySet="t_mail">
+          <ScalarProperty Name="tomail" ColumnName="tomail" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="body" ColumnName="body" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_memAlbum">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_memAlbum">
+        <MappingFragment StoreEntitySet="T_memAlbum">
+          <ScalarProperty Name="mem_id" ColumnName="mem_id" />
+          <ScalarProperty Name="reply_count" ColumnName="reply_count" />
+          <ScalarProperty Name="is_show" ColumnName="is_show" />
+          <ScalarProperty Name="album_time" ColumnName="album_time" />
+          <ScalarProperty Name="album_pic" ColumnName="album_pic" />
+          <ScalarProperty Name="album_num" ColumnName="album_num" />
+          <ScalarProperty Name="album_desc" ColumnName="album_desc" />
+          <ScalarProperty Name="album_name" ColumnName="album_name" />
+          <ScalarProperty Name="album_id" ColumnName="album_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Member">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Member">
+        <MappingFragment StoreEntitySet="T_Member">
+          <ScalarProperty Name="DarryHomeIDCardMd5" ColumnName="DarryHomeIDCardMd5" />
+          <ScalarProperty Name="appid" ColumnName="appid" />
+          <ScalarProperty Name="headimgurl" ColumnName="headimgurl" />
+          <ScalarProperty Name="mate" ColumnName="mate" />
+          <ScalarProperty Name="resdate" ColumnName="resdate" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="SinaOpenId" ColumnName="SinaOpenId" />
+          <ScalarProperty Name="QQOpenId" ColumnName="QQOpenId" />
+          <ScalarProperty Name="IDCard" ColumnName="IDCard" />
+          <ScalarProperty Name="typeid" ColumnName="typeid" />
+          <ScalarProperty Name="postcode" ColumnName="postcode" />
+          <ScalarProperty Name="qq" ColumnName="qq" />
+          <ScalarProperty Name="loginlock" ColumnName="loginlock" />
+          <ScalarProperty Name="lastip" ColumnName="lastip" />
+          <ScalarProperty Name="regip" ColumnName="regip" />
+          <ScalarProperty Name="lastlogin" ColumnName="lastlogin" />
+          <ScalarProperty Name="logincount" ColumnName="logincount" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="birthday" ColumnName="birthday" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="telephone" ColumnName="telephone" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="realname" ColumnName="realname" />
+          <ScalarProperty Name="userpwd" ColumnName="userpwd" />
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_MemberCollection">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_MemberCollection">
+        <MappingFragment StoreEntitySet="T_MemberCollection">
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="productid" ColumnName="productid" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_MemberFriend">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_MemberFriend">
+        <MappingFragment StoreEntitySet="T_MemberFriend">
+          <ScalarProperty Name="txtime" ColumnName="txtime" />
+          <ScalarProperty Name="dongji" ColumnName="dongji" />
+          <ScalarProperty Name="guanxi" ColumnName="guanxi" />
+          <ScalarProperty Name="senddate" ColumnName="senddate" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="telephone" ColumnName="telephone" />
+          <ScalarProperty Name="birthday" ColumnName="birthday" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="fid" ColumnName="fid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_MemberMsg">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_MemberMsg">
+        <MappingFragment StoreEntitySet="T_MemberMsg">
+          <ScalarProperty Name="reply" ColumnName="reply" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="postip" ColumnName="postip" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_MemMusic">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_MemMusic">
+        <MappingFragment StoreEntitySet="T_MemMusic">
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="music_title" ColumnName="music_title" />
+          <ScalarProperty Name="mem_id" ColumnName="mem_id" />
+          <ScalarProperty Name="music_state" ColumnName="music_state" />
+          <ScalarProperty Name="music_time" ColumnName="music_time" />
+          <ScalarProperty Name="music_path" ColumnName="music_path" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_memPhoto">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_memPhoto">
+        <MappingFragment StoreEntitySet="T_memPhoto">
+          <ScalarProperty Name="photo_time" ColumnName="photo_time" />
+          <ScalarProperty Name="photo_path" ColumnName="photo_path" />
+          <ScalarProperty Name="album_id" ColumnName="album_id" />
+          <ScalarProperty Name="photo_id" ColumnName="photo_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Message">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Message">
+        <MappingFragment StoreEntitySet="T_Message">
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="sendtime" ColumnName="sendtime" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Meta">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Meta">
+        <MappingFragment StoreEntitySet="T_Meta">
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="PageName" ColumnName="PageName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_ncount">
+      <EntityTypeMapping TypeName="DarryJewelryModel.t_ncount">
+        <MappingFragment StoreEntitySet="t_ncount">
+          <ScalarProperty Name="count_value" ColumnName="count_value" />
+          <ScalarProperty Name="count_name" ColumnName="count_name" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_news">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_news">
+        <MappingFragment StoreEntitySet="T_news">
+          <ScalarProperty Name="imgurl" ColumnName="imgurl" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_newscategory">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_newscategory">
+        <MappingFragment StoreEntitySet="T_newscategory">
+          <ScalarProperty Name="CategoryDesc" ColumnName="CategoryDesc" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_newslist">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_newslist">
+        <MappingFragment StoreEntitySet="T_newslist">
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="newsid" ColumnName="newsid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Order">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Order">
+        <MappingFragment StoreEntitySet="T_Order">
+          <ScalarProperty Name="DarryHomeIDCardMd5" ColumnName="DarryHomeIDCardMd5" />
+          <ScalarProperty Name="isbill" ColumnName="isbill" />
+          <ScalarProperty Name="appid" ColumnName="appid" />
+          <ScalarProperty Name="isNewWeb" ColumnName="isNewWeb" />
+          <ScalarProperty Name="m_status" ColumnName="m_status" />
+          <ScalarProperty Name="SellerId" ColumnName="SellerId" />
+          <ScalarProperty Name="latetime" ColumnName="latetime" />
+          <ScalarProperty Name="deliverytime" ColumnName="deliverytime" />
+          <ScalarProperty Name="SMSphone" ColumnName="SMSphone" />
+          <ScalarProperty Name="payid" ColumnName="payid" />
+          <ScalarProperty Name="paytype" ColumnName="paytype" />
+          <ScalarProperty Name="kdtype" ColumnName="kdtype" />
+          <ScalarProperty Name="kdid" ColumnName="kdid" />
+          <ScalarProperty Name="kdgs" ColumnName="kdgs" />
+          <ScalarProperty Name="sitenote" ColumnName="sitenote" />
+          <ScalarProperty Name="qq" ColumnName="qq" />
+          <ScalarProperty Name="postip" ColumnName="postip" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="ordernote" ColumnName="ordernote" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="orderid" ColumnName="orderid" />
+          <ScalarProperty Name="XmlFilePath" ColumnName="XmlFilePath" />
+          <ScalarProperty Name="ordertotal" ColumnName="ordertotal" />
+          <ScalarProperty Name="telephone" ColumnName="telephone" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="postcode" ColumnName="postcode" />
+          <ScalarProperty Name="GirlfriendName" ColumnName="GirlfriendName" />
+          <ScalarProperty Name="GMobile" ColumnName="GMobile" />
+          <ScalarProperty Name="GCard" ColumnName="GCard" />
+          <ScalarProperty Name="GName" ColumnName="GName" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="realname" ColumnName="realname" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Order_Log">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Order_Log">
+        <MappingFragment StoreEntitySet="T_Order_Log">
+          <ScalarProperty Name="log_type" ColumnName="log_type" />
+          <ScalarProperty Name="op_type" ColumnName="op_type" />
+          <ScalarProperty Name="op_name" ColumnName="op_name" />
+          <ScalarProperty Name="op_id" ColumnName="op_id" />
+          <ScalarProperty Name="log_text" ColumnName="log_text" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="orderid" ColumnName="orderid" />
+          <ScalarProperty Name="log_id" ColumnName="log_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_OrderDetail">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_OrderDetail">
+        <MappingFragment StoreEntitySet="T_OrderDetail">
+          <ScalarProperty Name="fdiamondId" ColumnName="fdiamondId" />
+          <ScalarProperty Name="diamondId" ColumnName="diamondId" />
+          <ScalarProperty Name="isNewWeb" ColumnName="isNewWeb" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="fontstyle" ColumnName="fontstyle" />
+          <ScalarProperty Name="handsize" ColumnName="handsize" />
+          <ScalarProperty Name="protype" ColumnName="protype" />
+          <ScalarProperty Name="memberprice" ColumnName="memberprice" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="orderId" ColumnName="orderId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Page">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Page">
+        <MappingFragment StoreEntitySet="T_Page">
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="titledesc" ColumnName="titledesc" />
+          <ScalarProperty Name="imgurl" ColumnName="imgurl" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="pageid" ColumnName="pageid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Pairs">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Pairs">
+        <MappingFragment StoreEntitySet="T_Pairs">
+          <ScalarProperty Name="img" ColumnName="img" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="txt5" ColumnName="txt5" />
+          <ScalarProperty Name="txt4" ColumnName="txt4" />
+          <ScalarProperty Name="txt3" ColumnName="txt3" />
+          <ScalarProperty Name="txt2" ColumnName="txt2" />
+          <ScalarProperty Name="txt1" ColumnName="txt1" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_photoReply">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_photoReply">
+        <MappingFragment StoreEntitySet="T_photoReply">
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="zhan" ColumnName="zhan" />
+          <ScalarProperty Name="path_s" ColumnName="path_s" />
+          <ScalarProperty Name="mem_id" ColumnName="mem_id" />
+          <ScalarProperty Name="reply_time" ColumnName="reply_time" />
+          <ScalarProperty Name="reply_state" ColumnName="reply_state" />
+          <ScalarProperty Name="reply_text" ColumnName="reply_text" />
+          <ScalarProperty Name="album_id" ColumnName="album_id" />
+          <ScalarProperty Name="reply_id" ColumnName="reply_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_picnewslist">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_picnewslist">
+        <MappingFragment StoreEntitySet="T_picnewslist">
+          <ScalarProperty Name="imgurl" ColumnName="imgurl" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="newsid" ColumnName="newsid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_pink_sale">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_pink_sale">
+        <MappingFragment StoreEntitySet="T_pink_sale">
+          <ScalarProperty Name="p_status" ColumnName="p_status" />
+          <ScalarProperty Name="Modify_date" ColumnName="Modify_date" />
+          <ScalarProperty Name="Modify_by" ColumnName="Modify_by" />
+          <ScalarProperty Name="Create_date" ColumnName="Create_date" />
+          <ScalarProperty Name="Create_by" ColumnName="Create_by" />
+          <ScalarProperty Name="is_countdown" ColumnName="is_countdown" />
+          <ScalarProperty Name="countdown_date" ColumnName="countdown_date" />
+          <ScalarProperty Name="sout_prompt" ColumnName="sout_prompt" />
+          <ScalarProperty Name="preordain_prompt" ColumnName="preordain_prompt" />
+          <ScalarProperty Name="Sale_prompt" ColumnName="Sale_prompt" />
+          <ScalarProperty Name="preordain_know" ColumnName="preordain_know" />
+          <ScalarProperty Name="sale_number" ColumnName="sale_number" />
+          <ScalarProperty Name="sale_date" ColumnName="sale_date" />
+          <ScalarProperty Name="preordain_number" ColumnName="preordain_number" />
+          <ScalarProperty Name="preordain_date" ColumnName="preordain_date" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Product">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Product">
+        <MappingFragment StoreEntitySet="T_Product">
+          <ScalarProperty Name="prot_id" ColumnName="prot_id" />
+          <ScalarProperty Name="DiamondId" ColumnName="DiamondId" />
+          <ScalarProperty Name="Shouxing" ColumnName="Shouxing" />
+          <ScalarProperty Name="QGEndTime" ColumnName="QGEndTime" />
+          <ScalarProperty Name="QGStartTime" ColumnName="QGStartTime" />
+          <ScalarProperty Name="IsXSQG" ColumnName="IsXSQG" />
+          <ScalarProperty Name="sellcount" ColumnName="sellcount" />
+          <ScalarProperty Name="kuanshi" ColumnName="kuanshi" />
+          <ScalarProperty Name="caizhi" ColumnName="caizhi" />
+          <ScalarProperty Name="isindex" ColumnName="isindex" />
+          <ScalarProperty Name="diyStylePrice" ColumnName="diyStylePrice" />
+          <ScalarProperty Name="diysubDiamond" ColumnName="diysubDiamond" />
+          <ScalarProperty Name="diyDiamond" ColumnName="diyDiamond" />
+          <ScalarProperty Name="diybit" ColumnName="diybit" />
+          <ScalarProperty Name="handsize" ColumnName="handsize" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="istj" ColumnName="istj" />
+          <ScalarProperty Name="pro_attribute" ColumnName="pro_attribute" />
+          <ScalarProperty Name="cert_no" ColumnName="cert_no" />
+          <ScalarProperty Name="cert_type" ColumnName="cert_type" />
+          <ScalarProperty Name="pro_no" ColumnName="pro_no" />
+          <ScalarProperty Name="text_20" ColumnName="text_20" />
+          <ScalarProperty Name="text_19" ColumnName="text_19" />
+          <ScalarProperty Name="text_18" ColumnName="text_18" />
+          <ScalarProperty Name="text_17" ColumnName="text_17" />
+          <ScalarProperty Name="text_16" ColumnName="text_16" />
+          <ScalarProperty Name="text_15" ColumnName="text_15" />
+          <ScalarProperty Name="text_14" ColumnName="text_14" />
+          <ScalarProperty Name="text_13" ColumnName="text_13" />
+          <ScalarProperty Name="text_12" ColumnName="text_12" />
+          <ScalarProperty Name="text_11" ColumnName="text_11" />
+          <ScalarProperty Name="text_10" ColumnName="text_10" />
+          <ScalarProperty Name="text_9" ColumnName="text_9" />
+          <ScalarProperty Name="text_8" ColumnName="text_8" />
+          <ScalarProperty Name="text_7" ColumnName="text_7" />
+          <ScalarProperty Name="text_6" ColumnName="text_6" />
+          <ScalarProperty Name="text_5" ColumnName="text_5" />
+          <ScalarProperty Name="text_4" ColumnName="text_4" />
+          <ScalarProperty Name="text_3" ColumnName="text_3" />
+          <ScalarProperty Name="text_2" ColumnName="text_2" />
+          <ScalarProperty Name="text_1" ColumnName="text_1" />
+          <ScalarProperty Name="Inventory" ColumnName="Inventory" />
+          <ScalarProperty Name="display" ColumnName="display" />
+          <ScalarProperty Name="imgurl5" ColumnName="imgurl5" />
+          <ScalarProperty Name="imgurl4" ColumnName="imgurl4" />
+          <ScalarProperty Name="imgurl3" ColumnName="imgurl3" />
+          <ScalarProperty Name="imgurl2" ColumnName="imgurl2" />
+          <ScalarProperty Name="imgurl1" ColumnName="imgurl1" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="imgurl" ColumnName="imgurl" />
+          <ScalarProperty Name="showtime" ColumnName="showtime" />
+          <ScalarProperty Name="MemberPrice" ColumnName="MemberPrice" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="classid" ColumnName="classid" />
+          <ScalarProperty Name="p_content" ColumnName="p_content" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Product_List">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Product_List">
+        <MappingFragment StoreEntitySet="T_Product_List">
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="pro_attribute" ColumnName="pro_attribute" />
+          <ScalarProperty Name="cert_no" ColumnName="cert_no" />
+          <ScalarProperty Name="cert_type" ColumnName="cert_type" />
+          <ScalarProperty Name="pro_no" ColumnName="pro_no" />
+          <ScalarProperty Name="text_20" ColumnName="text_20" />
+          <ScalarProperty Name="text_19" ColumnName="text_19" />
+          <ScalarProperty Name="text_18" ColumnName="text_18" />
+          <ScalarProperty Name="text_17" ColumnName="text_17" />
+          <ScalarProperty Name="text_16" ColumnName="text_16" />
+          <ScalarProperty Name="text_15" ColumnName="text_15" />
+          <ScalarProperty Name="text_14" ColumnName="text_14" />
+          <ScalarProperty Name="text_13" ColumnName="text_13" />
+          <ScalarProperty Name="text_12" ColumnName="text_12" />
+          <ScalarProperty Name="text_11" ColumnName="text_11" />
+          <ScalarProperty Name="text_10" ColumnName="text_10" />
+          <ScalarProperty Name="text_9" ColumnName="text_9" />
+          <ScalarProperty Name="text_8" ColumnName="text_8" />
+          <ScalarProperty Name="text_7" ColumnName="text_7" />
+          <ScalarProperty Name="text_6" ColumnName="text_6" />
+          <ScalarProperty Name="text_5" ColumnName="text_5" />
+          <ScalarProperty Name="text_4" ColumnName="text_4" />
+          <ScalarProperty Name="text_3" ColumnName="text_3" />
+          <ScalarProperty Name="text_2" ColumnName="text_2" />
+          <ScalarProperty Name="text_1" ColumnName="text_1" />
+          <ScalarProperty Name="imgurl1" ColumnName="imgurl1" />
+          <ScalarProperty Name="imgurl" ColumnName="imgurl" />
+          <ScalarProperty Name="MemberPrice" ColumnName="MemberPrice" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_ProductCate">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_ProductCate">
+        <MappingFragment StoreEntitySet="T_ProductCate">
+          <ScalarProperty Name="CateId" ColumnName="CateId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_ProductDetail">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_ProductDetail">
+        <MappingFragment StoreEntitySet="T_ProductDetail">
+          <ScalarProperty Name="HandInch" ColumnName="HandInch" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="kuanshi" ColumnName="kuanshi" />
+          <ScalarProperty Name="KimWeigth" ColumnName="KimWeigth" />
+          <ScalarProperty Name="CertificateCode" ColumnName="CertificateCode" />
+          <ScalarProperty Name="CertificateType" ColumnName="CertificateType" />
+          <ScalarProperty Name="fnumber" ColumnName="fnumber" />
+          <ScalarProperty Name="znumber" ColumnName="znumber" />
+          <ScalarProperty Name="productId" ColumnName="productId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_ProductLog">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_ProductLog">
+        <MappingFragment StoreEntitySet="T_ProductLog">
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="showtime" ColumnName="showtime" />
+          <ScalarProperty Name="productid" ColumnName="productid" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Promotion">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Promotion">
+        <MappingFragment StoreEntitySet="T_Promotion">
+          <ScalarProperty Name="ipcount" ColumnName="ipcount" />
+          <ScalarProperty Name="article" ColumnName="article" />
+          <ScalarProperty Name="click" ColumnName="click" />
+          <ScalarProperty Name="sharenum" ColumnName="sharenum" />
+          <ScalarProperty Name="numcode" ColumnName="numcode" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_ProposeNews">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_ProposeNews">
+        <MappingFragment StoreEntitySet="T_ProposeNews">
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="attribute" ColumnName="attribute" />
+          <ScalarProperty Name="smallPic" ColumnName="smallPic" />
+          <ScalarProperty Name="newsurl" ColumnName="newsurl" />
+          <ScalarProperty Name="articleType" ColumnName="articleType" />
+          <ScalarProperty Name="tagwords" ColumnName="tagwords" />
+          <ScalarProperty Name="recomId" ColumnName="recomId" />
+          <ScalarProperty Name="source" ColumnName="source" />
+          <ScalarProperty Name="desciption" ColumnName="desciption" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="ProposeNewsClick" ColumnName="ProposeNewsClick" />
+          <ScalarProperty Name="ProposeNewsAddtime" ColumnName="ProposeNewsAddtime" />
+          <ScalarProperty Name="ProposeNewsSort" ColumnName="ProposeNewsSort" />
+          <ScalarProperty Name="ProposeNewsHot" ColumnName="ProposeNewsHot" />
+          <ScalarProperty Name="ProposeNewsVideo" ColumnName="ProposeNewsVideo" />
+          <ScalarProperty Name="ProposeNewsContent" ColumnName="ProposeNewsContent" />
+          <ScalarProperty Name="ProposeNewsTitle" ColumnName="ProposeNewsTitle" />
+          <ScalarProperty Name="ProposeNewsClassId" ColumnName="ProposeNewsClassId" />
+          <ScalarProperty Name="ProposeNewsId" ColumnName="ProposeNewsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_QxEmail">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_QxEmail">
+        <MappingFragment StoreEntitySet="T_QxEmail">
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="senderip" ColumnName="senderip" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="mailcontent" ColumnName="mailcontent" />
+          <ScalarProperty Name="mailfrom" ColumnName="mailfrom" />
+          <ScalarProperty Name="mailto" ColumnName="mailto" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Reception">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Reception">
+        <MappingFragment StoreEntitySet="T_Reception">
+          <ScalarProperty Name="ReceptionType" ColumnName="ReceptionType" />
+          <ScalarProperty Name="ReceptionDate" ColumnName="ReceptionDate" />
+          <ScalarProperty Name="ReceptionCon" ColumnName="ReceptionCon" />
+          <ScalarProperty Name="ReceptionOrder" ColumnName="ReceptionOrder" />
+          <ScalarProperty Name="ReceptionUser" ColumnName="ReceptionUser" />
+          <ScalarProperty Name="ReceptionId" ColumnName="ReceptionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Sales">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Sales">
+        <MappingFragment StoreEntitySet="T_Sales">
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Send">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Send">
+        <MappingFragment StoreEntitySet="T_Send">
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="sendName" ColumnName="sendName" />
+          <ScalarProperty Name="contents" ColumnName="contents" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_shop">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_shop">
+        <MappingFragment StoreEntitySet="T_shop">
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="shopname" ColumnName="shopname" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_ShopItem">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_ShopItem">
+        <MappingFragment StoreEntitySet="T_ShopItem">
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="shopitem" ColumnName="shopitem" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_SpAddress">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_SpAddress">
+        <MappingFragment StoreEntitySet="T_SpAddress">
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="SpAddressDefault" ColumnName="SpAddressDefault" />
+          <ScalarProperty Name="SpAddressSMSMobile" ColumnName="SpAddressSMSMobile" />
+          <ScalarProperty Name="SpAddressGGirlfriend" ColumnName="SpAddressGGirlfriend" />
+          <ScalarProperty Name="SpAddressGCard" ColumnName="SpAddressGCard" />
+          <ScalarProperty Name="SpAddressGMobile" ColumnName="SpAddressGMobile" />
+          <ScalarProperty Name="SpAddressGName" ColumnName="SpAddressGName" />
+          <ScalarProperty Name="SpAddressMobile" ColumnName="SpAddressMobile" />
+          <ScalarProperty Name="SpAddressPhone" ColumnName="SpAddressPhone" />
+          <ScalarProperty Name="SpAddressName" ColumnName="SpAddressName" />
+          <ScalarProperty Name="SpAddressCode" ColumnName="SpAddressCode" />
+          <ScalarProperty Name="SpAddressStreet" ColumnName="SpAddressStreet" />
+          <ScalarProperty Name="SpAddressCity" ColumnName="SpAddressCity" />
+          <ScalarProperty Name="SpAddressId" ColumnName="SpAddressId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Star">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Star">
+        <MappingFragment StoreEntitySet="T_Star">
+          <ScalarProperty Name="img2" ColumnName="img2" />
+          <ScalarProperty Name="img1" ColumnName="img1" />
+          <ScalarProperty Name="txt" ColumnName="txt" />
+          <ScalarProperty Name="sex" ColumnName="sex" />
+          <ScalarProperty Name="star" ColumnName="star" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Stat">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Stat">
+        <MappingFragment StoreEntitySet="T_Stat">
+          <ScalarProperty Name="StatCountFalse" ColumnName="StatCountFalse" />
+          <ScalarProperty Name="StatCountTrue" ColumnName="StatCountTrue" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_StatDetail">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_StatDetail">
+        <MappingFragment StoreEntitySet="T_StatDetail">
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="adddate" ColumnName="adddate" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_SubShop">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_SubShop">
+        <MappingFragment StoreEntitySet="T_SubShop">
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="subtel" ColumnName="subtel" />
+          <ScalarProperty Name="subname" ColumnName="subname" />
+          <ScalarProperty Name="subtime" ColumnName="subtime" />
+          <ScalarProperty Name="subdate" ColumnName="subdate" />
+          <ScalarProperty Name="itemid" ColumnName="itemid" />
+          <ScalarProperty Name="shopid" ColumnName="shopid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_TagWords">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_TagWords">
+        <MappingFragment StoreEntitySet="T_TagWords">
+          <ScalarProperty Name="des" ColumnName="des" />
+          <ScalarProperty Name="keyword" ColumnName="keyword" />
+          <ScalarProperty Name="SEOTitle" ColumnName="SEOTitle" />
+          <ScalarProperty Name="Flink" ColumnName="Flink" />
+          <ScalarProperty Name="Artcleid" ColumnName="Artcleid" />
+          <ScalarProperty Name="Addtime" ColumnName="Addtime" />
+          <ScalarProperty Name="Tagurl" ColumnName="Tagurl" />
+          <ScalarProperty Name="Tagname" ColumnName="Tagname" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_thekey">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_thekey">
+        <MappingFragment StoreEntitySet="T_thekey">
+          <ScalarProperty Name="ztId" ColumnName="ztId" />
+          <ScalarProperty Name="artId" ColumnName="artId" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="hpro" ColumnName="hpro" />
+          <ScalarProperty Name="tpro" ColumnName="tpro" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="desctitle" ColumnName="desctitle" />
+          <ScalarProperty Name="keyword" ColumnName="keyword" />
+          <ScalarProperty Name="smpic" ColumnName="smpic" />
+          <ScalarProperty Name="lbpic3" ColumnName="lbpic3" />
+          <ScalarProperty Name="lbpic2" ColumnName="lbpic2" />
+          <ScalarProperty Name="lbpic1" ColumnName="lbpic1" />
+          <ScalarProperty Name="pic" ColumnName="pic" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_type">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_type">
+        <MappingFragment StoreEntitySet="T_type">
+          <ScalarProperty Name="mark" ColumnName="mark" />
+          <ScalarProperty Name="typeid" ColumnName="typeid" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_User">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_User">
+        <MappingFragment StoreEntitySet="T_User">
+          <ScalarProperty Name="pwddate" ColumnName="pwddate" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="realname" ColumnName="realname" />
+          <ScalarProperty Name="DepartId" ColumnName="DepartId" />
+          <ScalarProperty Name="lastloginip" ColumnName="lastloginip" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="module" ColumnName="module" />
+          <ScalarProperty Name="islock" ColumnName="islock" />
+          <ScalarProperty Name="lastlogintime" ColumnName="lastlogintime" />
+          <ScalarProperty Name="logincount" ColumnName="logincount" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_UserDepart">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_UserDepart">
+        <MappingFragment StoreEntitySet="T_UserDepart">
+          <ScalarProperty Name="modify_date" ColumnName="modify_date" />
+          <ScalarProperty Name="modify_by" ColumnName="modify_by" />
+          <ScalarProperty Name="create_by" ColumnName="create_by" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="module" ColumnName="module" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="DepartName" ColumnName="DepartName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_UserLog">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_UserLog">
+        <MappingFragment StoreEntitySet="T_UserLog">
+          <ScalarProperty Name="MacIp" ColumnName="MacIp" />
+          <ScalarProperty Name="Operate" ColumnName="Operate" />
+          <ScalarProperty Name="UserIp" ColumnName="UserIp" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="LogType" ColumnName="LogType" />
+          <ScalarProperty Name="AddTime" ColumnName="AddTime" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Wall">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Wall">
+        <MappingFragment StoreEntitySet="T_Wall">
+          <ScalarProperty Name="WallPostIp" ColumnName="WallPostIp" />
+          <ScalarProperty Name="WallDate" ColumnName="WallDate" />
+          <ScalarProperty Name="WallToContent" ColumnName="WallToContent" />
+          <ScalarProperty Name="WallToName" ColumnName="WallToName" />
+          <ScalarProperty Name="WallName" ColumnName="WallName" />
+          <ScalarProperty Name="WallNumber" ColumnName="WallNumber" />
+          <ScalarProperty Name="WallMemberId" ColumnName="WallMemberId" />
+          <ScalarProperty Name="WallId" ColumnName="WallId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_WoLog">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_WoLog">
+        <MappingFragment StoreEntitySet="T_WoLog">
+          <ScalarProperty Name="wo_id" ColumnName="wo_id" />
+          <ScalarProperty Name="Modify_date" ColumnName="Modify_date" />
+          <ScalarProperty Name="Modify_by" ColumnName="Modify_by" />
+          <ScalarProperty Name="txtlog" ColumnName="txtlog" />
+          <ScalarProperty Name="matter" ColumnName="matter" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Work">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Work">
+        <MappingFragment StoreEntitySet="T_Work">
+          <ScalarProperty Name="mark" ColumnName="mark" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="zige" ColumnName="zige" />
+          <ScalarProperty Name="duty" ColumnName="duty" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="pcount" ColumnName="pcount" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Work_Orders">
+      <EntityTypeMapping TypeName="DarryJewelryModel.T_Work_Orders">
+        <MappingFragment StoreEntitySet="T_Work_Orders">
+          <ScalarProperty Name="JTInventory_id" ColumnName="JTInventory_id" />
+          <ScalarProperty Name="lZInventory_id" ColumnName="lZInventory_id" />
+          <ScalarProperty Name="RingCode" ColumnName="RingCode" />
+          <ScalarProperty Name="ImgBarUrl" ColumnName="ImgBarUrl" />
+          <ScalarProperty Name="FYg" ColumnName="FYg" />
+          <ScalarProperty Name="Yg" ColumnName="Yg" />
+          <ScalarProperty Name="FCut3" ColumnName="FCut3" />
+          <ScalarProperty Name="FCut2" ColumnName="FCut2" />
+          <ScalarProperty Name="Cut3" ColumnName="Cut3" />
+          <ScalarProperty Name="Cut2" ColumnName="Cut2" />
+          <ScalarProperty Name="Modify_date" ColumnName="Modify_date" />
+          <ScalarProperty Name="Modify_by" ColumnName="Modify_by" />
+          <ScalarProperty Name="Create_date" ColumnName="Create_date" />
+          <ScalarProperty Name="Create_by" ColumnName="Create_by" />
+          <ScalarProperty Name="sku_id" ColumnName="sku_id" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="ProName" ColumnName="ProName" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="Fontstyle" ColumnName="Fontstyle" />
+          <ScalarProperty Name="Handsize" ColumnName="Handsize" />
+          <ScalarProperty Name="MCt" ColumnName="MCt" />
+          <ScalarProperty Name="FCount" ColumnName="FCount" />
+          <ScalarProperty Name="CCount" ColumnName="CCount" />
+          <ScalarProperty Name="FColor" ColumnName="FColor" />
+          <ScalarProperty Name="FCut" ColumnName="FCut" />
+          <ScalarProperty Name="FClarity" ColumnName="FClarity" />
+          <ScalarProperty Name="FCt" ColumnName="FCt" />
+          <ScalarProperty Name="Cut" ColumnName="Cut" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Clarity" ColumnName="Clarity" />
+          <ScalarProperty Name="Ct" ColumnName="Ct" />
+          <ScalarProperty Name="Order_id" ColumnName="Order_id" />
+          <ScalarProperty Name="Wo_status" ColumnName="Wo_status" />
+          <ScalarProperty Name="Wo_code" ColumnName="Wo_code" />
+          <ScalarProperty Name="Wo_id" ColumnName="Wo_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_AfterService">
+      <EntityTypeMapping TypeName="DarryJewelryModel.tb_AfterService">
+        <MappingFragment StoreEntitySet="tb_AfterService">
+          <ScalarProperty Name="AfterServiceNo" ColumnName="AfterServiceNo" />
+          <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+          <ScalarProperty Name="OrderDetailId" ColumnName="OrderDetailId" />
+          <ScalarProperty Name="Orderid" ColumnName="Orderid" />
+          <ScalarProperty Name="AfterServiceDate" ColumnName="AfterServiceDate" />
+          <ScalarProperty Name="AfterServiceState" ColumnName="AfterServiceState" />
+          <ScalarProperty Name="DDeliveryNumbers" ColumnName="DDeliveryNumbers" />
+          <ScalarProperty Name="DDeliveryName" ColumnName="DDeliveryName" />
+          <ScalarProperty Name="DDeliveryType" ColumnName="DDeliveryType" />
+          <ScalarProperty Name="DRemarks" ColumnName="DRemarks" />
+          <ScalarProperty Name="KDeliveryNumbers" ColumnName="KDeliveryNumbers" />
+          <ScalarProperty Name="KDeliveryName" ColumnName="KDeliveryName" />
+          <ScalarProperty Name="KDeliveryType" ColumnName="KDeliveryType" />
+          <ScalarProperty Name="KRemarks" ColumnName="KRemarks" />
+          <ScalarProperty Name="TypeService" ColumnName="TypeService" />
+          <ScalarProperty Name="AfterServiceUserId" ColumnName="AfterServiceUserId" />
+          <ScalarProperty Name="AfterServiceId" ColumnName="AfterServiceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_SMSRecord">
+      <EntityTypeMapping TypeName="DarryJewelryModel.Tb_SMSRecord">
+        <MappingFragment StoreEntitySet="Tb_SMSRecord">
+          <ScalarProperty Name="SMSIp" ColumnName="SMSIp" />
+          <ScalarProperty Name="SMSDate" ColumnName="SMSDate" />
+          <ScalarProperty Name="SMSReturn" ColumnName="SMSReturn" />
+          <ScalarProperty Name="SMSPhone" ColumnName="SMSPhone" />
+          <ScalarProperty Name="SMSId" ColumnName="SMSId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_SMSRemind">
+      <EntityTypeMapping TypeName="DarryJewelryModel.Tb_SMSRemind">
+        <MappingFragment StoreEntitySet="Tb_SMSRemind">
+          <ScalarProperty Name="SMSRemindStatus" ColumnName="SMSRemindStatus" />
+          <ScalarProperty Name="SMSRemindDateTime" ColumnName="SMSRemindDateTime" />
+          <ScalarProperty Name="SMSRemindDay" ColumnName="SMSRemindDay" />
+          <ScalarProperty Name="SMSRemindCon" ColumnName="SMSRemindCon" />
+          <ScalarProperty Name="SMSRemindPostTime" ColumnName="SMSRemindPostTime" />
+          <ScalarProperty Name="SMSRemindTime" ColumnName="SMSRemindTime" />
+          <ScalarProperty Name="SMSRemindName" ColumnName="SMSRemindName" />
+          <ScalarProperty Name="SMSReminUserId" ColumnName="SMSReminUserId" />
+          <ScalarProperty Name="SMSRemindId" ColumnName="SMSRemindId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_Special">
+      <EntityTypeMapping TypeName="DarryJewelryModel.Tb_Special">
+        <MappingFragment StoreEntitySet="Tb_Special">
+          <ScalarProperty Name="SpecialDate" ColumnName="SpecialDate" />
+          <ScalarProperty Name="SpecialContent" ColumnName="SpecialContent" />
+          <ScalarProperty Name="SpecialTitle" ColumnName="SpecialTitle" />
+          <ScalarProperty Name="SpecialClassId" ColumnName="SpecialClassId" />
+          <ScalarProperty Name="SpecialId" ColumnName="SpecialId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_SpecialClass">
+      <EntityTypeMapping TypeName="DarryJewelryModel.Tb_SpecialClass">
+        <MappingFragment StoreEntitySet="Tb_SpecialClass">
+          <ScalarProperty Name="SpecialClassName" ColumnName="SpecialClassName" />
+          <ScalarProperty Name="SpecialClassId" ColumnName="SpecialClassId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkDay">
+      <EntityTypeMapping TypeName="DarryJewelryModel.WorkDay">
+        <MappingFragment StoreEntitySet="WorkDay">
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Day" ColumnName="Day" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_admentInfo">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_admentInfo">
+        <MappingFragment StoreEntitySet="view_admentInfo">
+          <ScalarProperty Name="tag1" ColumnName="tag1" />
+          <ScalarProperty Name="imgUrl" ColumnName="imgUrl" />
+          <ScalarProperty Name="imgAlt" ColumnName="imgAlt" />
+          <ScalarProperty Name="imgcaption" ColumnName="imgcaption" />
+          <ScalarProperty Name="httpUrl" ColumnName="httpUrl" />
+          <ScalarProperty Name="imgId" ColumnName="imgId" />
+          <ScalarProperty Name="adCode" ColumnName="adCode" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="modifyDate" ColumnName="modifyDate" />
+          <ScalarProperty Name="createDate" ColumnName="createDate" />
+          <ScalarProperty Name="createby" ColumnName="createby" />
+          <ScalarProperty Name="modifyBy" ColumnName="modifyBy" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="clickNum" ColumnName="clickNum" />
+          <ScalarProperty Name="adType" ColumnName="adType" />
+          <ScalarProperty Name="adTitle" ColumnName="adTitle" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_AfterServiceMember">
+      <EntityTypeMapping TypeName="DarryJewelryModel.View_AfterServiceMember">
+        <MappingFragment StoreEntitySet="View_AfterServiceMember">
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="AfterServiceNo" ColumnName="AfterServiceNo" />
+          <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+          <ScalarProperty Name="OrderDetailId" ColumnName="OrderDetailId" />
+          <ScalarProperty Name="Orderid" ColumnName="Orderid" />
+          <ScalarProperty Name="AfterServiceDate" ColumnName="AfterServiceDate" />
+          <ScalarProperty Name="AfterServiceState" ColumnName="AfterServiceState" />
+          <ScalarProperty Name="DDeliveryNumbers" ColumnName="DDeliveryNumbers" />
+          <ScalarProperty Name="DDeliveryName" ColumnName="DDeliveryName" />
+          <ScalarProperty Name="DDeliveryType" ColumnName="DDeliveryType" />
+          <ScalarProperty Name="DRemarks" ColumnName="DRemarks" />
+          <ScalarProperty Name="KDeliveryNumbers" ColumnName="KDeliveryNumbers" />
+          <ScalarProperty Name="KDeliveryName" ColumnName="KDeliveryName" />
+          <ScalarProperty Name="KDeliveryType" ColumnName="KDeliveryType" />
+          <ScalarProperty Name="KRemarks" ColumnName="KRemarks" />
+          <ScalarProperty Name="TypeService" ColumnName="TypeService" />
+          <ScalarProperty Name="AfterServiceUserId" ColumnName="AfterServiceUserId" />
+          <ScalarProperty Name="AfterServiceId" ColumnName="AfterServiceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_AfterServiceOrder">
+      <EntityTypeMapping TypeName="DarryJewelryModel.View_AfterServiceOrder">
+        <MappingFragment StoreEntitySet="View_AfterServiceOrder">
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="realname" ColumnName="realname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="SellerId" ColumnName="SellerId" />
+          <ScalarProperty Name="Orderid" ColumnName="Orderid" />
+          <ScalarProperty Name="AfterServiceDate" ColumnName="AfterServiceDate" />
+          <ScalarProperty Name="AfterServiceState" ColumnName="AfterServiceState" />
+          <ScalarProperty Name="DDeliveryNumbers" ColumnName="DDeliveryNumbers" />
+          <ScalarProperty Name="DDeliveryName" ColumnName="DDeliveryName" />
+          <ScalarProperty Name="DDeliveryType" ColumnName="DDeliveryType" />
+          <ScalarProperty Name="DRemarks" ColumnName="DRemarks" />
+          <ScalarProperty Name="KDeliveryNumbers" ColumnName="KDeliveryNumbers" />
+          <ScalarProperty Name="KDeliveryName" ColumnName="KDeliveryName" />
+          <ScalarProperty Name="KDeliveryType" ColumnName="KDeliveryType" />
+          <ScalarProperty Name="KRemarks" ColumnName="KRemarks" />
+          <ScalarProperty Name="TypeService" ColumnName="TypeService" />
+          <ScalarProperty Name="AfterServiceUserId" ColumnName="AfterServiceUserId" />
+          <ScalarProperty Name="AfterServiceId" ColumnName="AfterServiceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_cart">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_cart">
+        <MappingFragment StoreEntitySet="view_cart">
+          <ScalarProperty Name="productTypeId" ColumnName="productTypeId" />
+          <ScalarProperty Name="productNo" ColumnName="productNo" />
+          <ScalarProperty Name="symmetry" ColumnName="symmetry" />
+          <ScalarProperty Name="cut" ColumnName="cut" />
+          <ScalarProperty Name="polish" ColumnName="polish" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="clarity" ColumnName="clarity" />
+          <ScalarProperty Name="carat" ColumnName="carat" />
+          <ScalarProperty Name="appid" ColumnName="appid" />
+          <ScalarProperty Name="sirCode" ColumnName="sirCode" />
+          <ScalarProperty Name="sirName" ColumnName="sirName" />
+          <ScalarProperty Name="isNewWeb" ColumnName="isNewWeb" />
+          <ScalarProperty Name="fDiamondId" ColumnName="fDiamondId" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="fontstyle" ColumnName="fontstyle" />
+          <ScalarProperty Name="handsize" ColumnName="handsize" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="SumMember" ColumnName="SumMember" />
+          <ScalarProperty Name="Sum" ColumnName="Sum" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="DiamondPrice" ColumnName="DiamondPrice" />
+          <ScalarProperty Name="MemberPrice" ColumnName="MemberPrice" />
+          <ScalarProperty Name="ProductImg" ColumnName="ProductImg" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="DiamondId" ColumnName="DiamondId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="CookieId" ColumnName="CookieId" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_diamond_product">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_diamond_product">
+        <MappingFragment StoreEntitySet="view_diamond_product">
+          <ScalarProperty Name="productid" ColumnName="productid" />
+          <ScalarProperty Name="stocknumber" ColumnName="stocknumber" />
+          <ScalarProperty Name="oldId" ColumnName="oldId" />
+          <ScalarProperty Name="batch" ColumnName="batch" />
+          <ScalarProperty Name="protype" ColumnName="protype" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="fluorescence" ColumnName="fluorescence" />
+          <ScalarProperty Name="culet" ColumnName="culet" />
+          <ScalarProperty Name="girdle" ColumnName="girdle" />
+          <ScalarProperty Name="depth" ColumnName="depth" />
+          <ScalarProperty Name="d_table" ColumnName="d_table" />
+          <ScalarProperty Name="measurements" ColumnName="measurements" />
+          <ScalarProperty Name="cut" ColumnName="cut" />
+          <ScalarProperty Name="symmetry" ColumnName="symmetry" />
+          <ScalarProperty Name="polish" ColumnName="polish" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="clarity" ColumnName="clarity" />
+          <ScalarProperty Name="carat" ColumnName="carat" />
+          <ScalarProperty Name="d_code" ColumnName="d_code" />
+          <ScalarProperty Name="d_type" ColumnName="d_type" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="shape" ColumnName="shape" />
+          <ScalarProperty Name="memberprice" ColumnName="memberprice" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_diyproduct">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_diyproduct">
+        <MappingFragment StoreEntitySet="view_diyproduct">
+          <ScalarProperty Name="imgurl2" ColumnName="imgurl2" />
+          <ScalarProperty Name="imgurl" ColumnName="imgurl" />
+          <ScalarProperty Name="HandInch" ColumnName="HandInch" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="kuanshi" ColumnName="kuanshi" />
+          <ScalarProperty Name="KimWeigth" ColumnName="KimWeigth" />
+          <ScalarProperty Name="CertificateType" ColumnName="CertificateType" />
+          <ScalarProperty Name="CertificateCode" ColumnName="CertificateCode" />
+          <ScalarProperty Name="fnumber" ColumnName="fnumber" />
+          <ScalarProperty Name="znumber" ColumnName="znumber" />
+          <ScalarProperty Name="GroupDPID" ColumnName="GroupDPID" />
+          <ScalarProperty Name="IsCustomPink" ColumnName="IsCustomPink" />
+          <ScalarProperty Name="IsCustomDiamond" ColumnName="IsCustomDiamond" />
+          <ScalarProperty Name="TJLZ" ColumnName="TJLZ" />
+          <ScalarProperty Name="MemberPrice" ColumnName="MemberPrice" />
+          <ScalarProperty Name="zcut" ColumnName="zcut" />
+          <ScalarProperty Name="zfluo" ColumnName="zfluo" />
+          <ScalarProperty Name="zsymm" ColumnName="zsymm" />
+          <ScalarProperty Name="zpolish" ColumnName="zpolish" />
+          <ScalarProperty Name="zcolor" ColumnName="zcolor" />
+          <ScalarProperty Name="zclarity" ColumnName="zclarity" />
+          <ScalarProperty Name="zct" ColumnName="zct" />
+          <ScalarProperty Name="DiamondPrice" ColumnName="DiamondPrice" />
+          <ScalarProperty Name="DiamondId" ColumnName="DiamondId" />
+          <ScalarProperty Name="fDiamondId" ColumnName="fDiamondId" />
+          <ScalarProperty Name="CollectionId" ColumnName="CollectionId" />
+          <ScalarProperty Name="oldId" ColumnName="oldId" />
+          <ScalarProperty Name="salecount" ColumnName="salecount" />
+          <ScalarProperty Name="pSort" ColumnName="pSort" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="p_content" ColumnName="p_content" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="ProductType" ColumnName="ProductType" />
+          <ScalarProperty Name="productTypeId" ColumnName="productTypeId" />
+          <ScalarProperty Name="productNo" ColumnName="productNo" />
+          <ScalarProperty Name="BasePID" ColumnName="BasePID" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_dproduct">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_dproduct">
+        <MappingFragment StoreEntitySet="view_dproduct">
+          <ScalarProperty Name="GroupDPID" ColumnName="GroupDPID" />
+          <ScalarProperty Name="MemberPrice" ColumnName="MemberPrice" />
+          <ScalarProperty Name="zcut" ColumnName="zcut" />
+          <ScalarProperty Name="zfluo" ColumnName="zfluo" />
+          <ScalarProperty Name="zsymm" ColumnName="zsymm" />
+          <ScalarProperty Name="zpolish" ColumnName="zpolish" />
+          <ScalarProperty Name="zcolor" ColumnName="zcolor" />
+          <ScalarProperty Name="zclarity" ColumnName="zclarity" />
+          <ScalarProperty Name="zct" ColumnName="zct" />
+          <ScalarProperty Name="DiamondPrice" ColumnName="DiamondPrice" />
+          <ScalarProperty Name="DiamondId" ColumnName="DiamondId" />
+          <ScalarProperty Name="BasePID" ColumnName="BasePID" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_Goods">
+      <EntityTypeMapping TypeName="DarryJewelryModel.View_Goods">
+        <MappingFragment StoreEntitySet="View_Goods">
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="goodsNo" ColumnName="goodsNo" />
+          <ScalarProperty Name="goodsName" ColumnName="goodsName" />
+          <ScalarProperty Name="goodsType" ColumnName="goodsType" />
+          <ScalarProperty Name="goodsTypeId" ColumnName="goodsTypeId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_GoodsInventory">
+      <EntityTypeMapping TypeName="DarryJewelryModel.View_GoodsInventory">
+        <MappingFragment StoreEntitySet="View_GoodsInventory">
+          <ScalarProperty Name="GIA" ColumnName="GIA" />
+          <ScalarProperty Name="inventoryId" ColumnName="inventoryId" />
+          <ScalarProperty Name="storehouseId" ColumnName="storehouseId" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="goodsName" ColumnName="goodsName" />
+          <ScalarProperty Name="goodsNo" ColumnName="goodsNo" />
+          <ScalarProperty Name="stockcode" ColumnName="stockcode" />
+          <ScalarProperty Name="storehouse" ColumnName="storehouse" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="goodsId" ColumnName="goodsId" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="Property" ColumnName="Property" />
+          <ScalarProperty Name="goodsType" ColumnName="goodsType" />
+          <ScalarProperty Name="goodsTypeId" ColumnName="goodsTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_GoodsInventory2">
+      <EntityTypeMapping TypeName="DarryJewelryModel.View_GoodsInventory2">
+        <MappingFragment StoreEntitySet="View_GoodsInventory2">
+          <ScalarProperty Name="inventoryId" ColumnName="inventoryId" />
+          <ScalarProperty Name="storehouseId" ColumnName="storehouseId" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="goodsName" ColumnName="goodsName" />
+          <ScalarProperty Name="goodsNo" ColumnName="goodsNo" />
+          <ScalarProperty Name="stockcode" ColumnName="stockcode" />
+          <ScalarProperty Name="storehouse" ColumnName="storehouse" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="goodsId" ColumnName="goodsId" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="Property" ColumnName="Property" />
+          <ScalarProperty Name="goodsType" ColumnName="goodsType" />
+          <ScalarProperty Name="goodsTypeId" ColumnName="goodsTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_GoodsPropertyValue">
+      <EntityTypeMapping TypeName="DarryJewelryModel.View_GoodsPropertyValue">
+        <MappingFragment StoreEntitySet="View_GoodsPropertyValue">
+          <ScalarProperty Name="isNULL" ColumnName="isNULL" />
+          <ScalarProperty Name="PropertyTypeId" ColumnName="PropertyTypeId" />
+          <ScalarProperty Name="PropertyValue" ColumnName="PropertyValue" />
+          <ScalarProperty Name="Property" ColumnName="Property" />
+          <ScalarProperty Name="GoodsTypeId" ColumnName="GoodsTypeId" />
+          <ScalarProperty Name="goodsTypePropertyId" ColumnName="goodsTypePropertyId" />
+          <ScalarProperty Name="goodsId" ColumnName="goodsId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_GoodsTypeProperty">
+      <EntityTypeMapping TypeName="DarryJewelryModel.View_GoodsTypeProperty">
+        <MappingFragment StoreEntitySet="View_GoodsTypeProperty">
+          <ScalarProperty Name="PropertyTypeId" ColumnName="PropertyTypeId" />
+          <ScalarProperty Name="isNULL" ColumnName="isNULL" />
+          <ScalarProperty Name="PropertyType" ColumnName="PropertyType" />
+          <ScalarProperty Name="Property" ColumnName="Property" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="GoodsTypePropertyId" ColumnName="GoodsTypePropertyId" />
+          <ScalarProperty Name="GoodsTypeId" ColumnName="GoodsTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_Inventory">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_Inventory">
+        <MappingFragment StoreEntitySet="view_Inventory">
+          <ScalarProperty Name="GIA" ColumnName="GIA" />
+          <ScalarProperty Name="goodsType" ColumnName="goodsType" />
+          <ScalarProperty Name="goodsTypeId" ColumnName="goodsTypeId" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="goodsNo" ColumnName="goodsNo" />
+          <ScalarProperty Name="goodsName" ColumnName="goodsName" />
+          <ScalarProperty Name="storehouseId" ColumnName="storehouseId" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="goodsId" ColumnName="goodsId" />
+          <ScalarProperty Name="stockcode" ColumnName="stockcode" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_InventoryGoods">
+      <EntityTypeMapping TypeName="DarryJewelryModel.View_InventoryGoods">
+        <MappingFragment StoreEntitySet="View_InventoryGoods">
+          <ScalarProperty Name="goodsType" ColumnName="goodsType" />
+          <ScalarProperty Name="goodsId" ColumnName="goodsId" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="goodsTypeId" ColumnName="goodsTypeId" />
+          <ScalarProperty Name="goodsName" ColumnName="goodsName" />
+          <ScalarProperty Name="goodsNo" ColumnName="goodsNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_Member_Pro">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_Member_Pro">
+        <MappingFragment StoreEntitySet="view_Member_Pro">
+          <ScalarProperty Name="text_4" ColumnName="text_4" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="DarryHomeIDCardMd5" ColumnName="DarryHomeIDCardMd5" />
+          <ScalarProperty Name="appid" ColumnName="appid" />
+          <ScalarProperty Name="headimgurl" ColumnName="headimgurl" />
+          <ScalarProperty Name="mate" ColumnName="mate" />
+          <ScalarProperty Name="resdate" ColumnName="resdate" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="SinaOpenId" ColumnName="SinaOpenId" />
+          <ScalarProperty Name="QQOpenId" ColumnName="QQOpenId" />
+          <ScalarProperty Name="IDCard" ColumnName="IDCard" />
+          <ScalarProperty Name="typeid" ColumnName="typeid" />
+          <ScalarProperty Name="postcode" ColumnName="postcode" />
+          <ScalarProperty Name="qq" ColumnName="qq" />
+          <ScalarProperty Name="loginlock" ColumnName="loginlock" />
+          <ScalarProperty Name="lastip" ColumnName="lastip" />
+          <ScalarProperty Name="regip" ColumnName="regip" />
+          <ScalarProperty Name="lastlogin" ColumnName="lastlogin" />
+          <ScalarProperty Name="logincount" ColumnName="logincount" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="birthday" ColumnName="birthday" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="telephone" ColumnName="telephone" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="realname" ColumnName="realname" />
+          <ScalarProperty Name="userpwd" ColumnName="userpwd" />
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_MemberDarryHome">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_MemberDarryHome">
+        <MappingFragment StoreEntitySet="view_MemberDarryHome">
+          <ScalarProperty Name="appid" ColumnName="appid" />
+          <ScalarProperty Name="headimgurl" ColumnName="headimgurl" />
+          <ScalarProperty Name="mate" ColumnName="mate" />
+          <ScalarProperty Name="resdate" ColumnName="resdate" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="SinaOpenId" ColumnName="SinaOpenId" />
+          <ScalarProperty Name="QQOpenId" ColumnName="QQOpenId" />
+          <ScalarProperty Name="IDCard" ColumnName="IDCard" />
+          <ScalarProperty Name="typeid" ColumnName="typeid" />
+          <ScalarProperty Name="postcode" ColumnName="postcode" />
+          <ScalarProperty Name="qq" ColumnName="qq" />
+          <ScalarProperty Name="loginlock" ColumnName="loginlock" />
+          <ScalarProperty Name="lastip" ColumnName="lastip" />
+          <ScalarProperty Name="regip" ColumnName="regip" />
+          <ScalarProperty Name="lastlogin" ColumnName="lastlogin" />
+          <ScalarProperty Name="logincount" ColumnName="logincount" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="birthday" ColumnName="birthday" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="telephone" ColumnName="telephone" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="realname" ColumnName="realname" />
+          <ScalarProperty Name="userpwd" ColumnName="userpwd" />
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DarryHomeIDCardMd5" ColumnName="DarryHomeIDCardMd5" />
+          <ScalarProperty Name="DarryHomeProductImg" ColumnName="DarryHomeProductImg" />
+          <ScalarProperty Name="DarryHomeMusicUrl" ColumnName="DarryHomeMusicUrl" />
+          <ScalarProperty Name="DarryHomeBgPhoto" ColumnName="DarryHomeBgPhoto" />
+          <ScalarProperty Name="DarryHomePhoto" ColumnName="DarryHomePhoto" />
+          <ScalarProperty Name="DarryHomeCode" ColumnName="DarryHomeCode" />
+          <ScalarProperty Name="DarryHomeContent" ColumnName="DarryHomeContent" />
+          <ScalarProperty Name="DarryHomeMsName" ColumnName="DarryHomeMsName" />
+          <ScalarProperty Name="DarryHomeMemberTitle" ColumnName="DarryHomeMemberTitle" />
+          <ScalarProperty Name="DarryHomeDate" ColumnName="DarryHomeDate" />
+          <ScalarProperty Name="DarryHomeIsBit" ColumnName="DarryHomeIsBit" />
+          <ScalarProperty Name="DarryHomeOrderId" ColumnName="DarryHomeOrderId" />
+          <ScalarProperty Name="DarryHomeIDCard" ColumnName="DarryHomeIDCard" />
+          <ScalarProperty Name="DarryHomeNationality" ColumnName="DarryHomeNationality" />
+          <ScalarProperty Name="DarryHomeMemberName" ColumnName="DarryHomeMemberName" />
+          <ScalarProperty Name="DarryHomeMemberId" ColumnName="DarryHomeMemberId" />
+          <ScalarProperty Name="DarryHomeId" ColumnName="DarryHomeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_MemberDiySearch">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_MemberDiySearch">
+        <MappingFragment StoreEntitySet="view_MemberDiySearch">
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="zan" ColumnName="zan" />
+          <ScalarProperty Name="SheName" ColumnName="SheName" />
+          <ScalarProperty Name="musicurl" ColumnName="musicurl" />
+          <ScalarProperty Name="idcard" ColumnName="idcard" />
+          <ScalarProperty Name="qq" ColumnName="qq" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="imgurl" ColumnName="imgurl" />
+          <ScalarProperty Name="diydate" ColumnName="diydate" />
+          <ScalarProperty Name="diamondcode" ColumnName="diamondcode" />
+          <ScalarProperty Name="ringcode" ColumnName="ringcode" />
+          <ScalarProperty Name="specialday" ColumnName="specialday" />
+          <ScalarProperty Name="objbirthday" ColumnName="objbirthday" />
+          <ScalarProperty Name="birthday" ColumnName="birthday" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="realname" ColumnName="realname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_mOrder">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_mOrder">
+        <MappingFragment StoreEntitySet="view_mOrder">
+          <ScalarProperty Name="imgurl" ColumnName="imgurl" />
+          <ScalarProperty Name="odcount" ColumnName="odcount" />
+          <ScalarProperty Name="productNo" ColumnName="productNo" />
+          <ScalarProperty Name="productTypeId" ColumnName="productTypeId" />
+          <ScalarProperty Name="memberprice" ColumnName="memberprice" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="latetime" ColumnName="latetime" />
+          <ScalarProperty Name="deliverytime" ColumnName="deliverytime" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="orderid" ColumnName="orderid" />
+          <ScalarProperty Name="ordertotal" ColumnName="ordertotal" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_myfavorites">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_myfavorites">
+        <MappingFragment StoreEntitySet="view_myfavorites">
+          <ScalarProperty Name="commentCount" ColumnName="commentCount" />
+          <ScalarProperty Name="imgurl" ColumnName="imgurl" />
+          <ScalarProperty Name="kuanshi" ColumnName="kuanshi" />
+          <ScalarProperty Name="HandInch" ColumnName="HandInch" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="zcut" ColumnName="zcut" />
+          <ScalarProperty Name="zcolor" ColumnName="zcolor" />
+          <ScalarProperty Name="zclarity" ColumnName="zclarity" />
+          <ScalarProperty Name="znumber" ColumnName="znumber" />
+          <ScalarProperty Name="zct" ColumnName="zct" />
+          <ScalarProperty Name="MemberPrice" ColumnName="MemberPrice" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="productTypeId" ColumnName="productTypeId" />
+          <ScalarProperty Name="productNo" ColumnName="productNo" />
+          <ScalarProperty Name="realname" ColumnName="realname" />
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="memberid" ColumnName="memberid" />
+          <ScalarProperty Name="myParms" ColumnName="myParms" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_ordercomment">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_ordercomment">
+        <MappingFragment StoreEntitySet="view_ordercomment">
+          <ScalarProperty Name="zcut" ColumnName="zcut" />
+          <ScalarProperty Name="zcolor" ColumnName="zcolor" />
+          <ScalarProperty Name="zclarity" ColumnName="zclarity" />
+          <ScalarProperty Name="zct" ColumnName="zct" />
+          <ScalarProperty Name="fdiamondId" ColumnName="fdiamondId" />
+          <ScalarProperty Name="diamondId" ColumnName="diamondId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="readdtime" ColumnName="readdtime" />
+          <ScalarProperty Name="reply" ColumnName="reply" />
+          <ScalarProperty Name="recontent" ColumnName="recontent" />
+          <ScalarProperty Name="imgurl" ColumnName="imgurl" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="CommentID" ColumnName="CommentID" />
+          <ScalarProperty Name="productTypeId" ColumnName="productTypeId" />
+          <ScalarProperty Name="productNo" ColumnName="productNo" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="fontstyle" ColumnName="fontstyle" />
+          <ScalarProperty Name="handsize" ColumnName="handsize" />
+          <ScalarProperty Name="protype" ColumnName="protype" />
+          <ScalarProperty Name="memberprice" ColumnName="memberprice" />
+          <ScalarProperty Name="orderId" ColumnName="orderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_orderdetail">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_orderdetail">
+        <MappingFragment StoreEntitySet="view_orderdetail">
+          <ScalarProperty Name="diamondId" ColumnName="diamondId" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="zptid" ColumnName="zptid" />
+          <ScalarProperty Name="isNewWeb" ColumnName="isNewWeb" />
+          <ScalarProperty Name="zcut" ColumnName="zcut" />
+          <ScalarProperty Name="zcolor" ColumnName="zcolor" />
+          <ScalarProperty Name="zclarity" ColumnName="zclarity" />
+          <ScalarProperty Name="zct" ColumnName="zct" />
+          <ScalarProperty Name="imgurl" ColumnName="imgurl" />
+          <ScalarProperty Name="CollectionId" ColumnName="CollectionId" />
+          <ScalarProperty Name="oldId" ColumnName="oldId" />
+          <ScalarProperty Name="productTypeId" ColumnName="productTypeId" />
+          <ScalarProperty Name="productNo" ColumnName="productNo" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="fontstyle" ColumnName="fontstyle" />
+          <ScalarProperty Name="handsize" ColumnName="handsize" />
+          <ScalarProperty Name="protype" ColumnName="protype" />
+          <ScalarProperty Name="memberprice" ColumnName="memberprice" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="orderId" ColumnName="orderId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_orderdetail_product">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_orderdetail_product">
+        <MappingFragment StoreEntitySet="view_orderdetail_product">
+          <ScalarProperty Name="text_15" ColumnName="text_15" />
+          <ScalarProperty Name="text_14" ColumnName="text_14" />
+          <ScalarProperty Name="text_13" ColumnName="text_13" />
+          <ScalarProperty Name="text_12" ColumnName="text_12" />
+          <ScalarProperty Name="text_11" ColumnName="text_11" />
+          <ScalarProperty Name="text_8" ColumnName="text_8" />
+          <ScalarProperty Name="text_7" ColumnName="text_7" />
+          <ScalarProperty Name="text_6" ColumnName="text_6" />
+          <ScalarProperty Name="text_5" ColumnName="text_5" />
+          <ScalarProperty Name="text_4" ColumnName="text_4" />
+          <ScalarProperty Name="text_3" ColumnName="text_3" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="fontstyle" ColumnName="fontstyle" />
+          <ScalarProperty Name="handsize" ColumnName="handsize" />
+          <ScalarProperty Name="protype" ColumnName="protype" />
+          <ScalarProperty Name="memberprice" ColumnName="memberprice" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="orderId" ColumnName="orderId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_orderdetail_product2">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_orderdetail_product2">
+        <MappingFragment StoreEntitySet="view_orderdetail_product2">
+          <ScalarProperty Name="sellcount" ColumnName="sellcount" />
+          <ScalarProperty Name="pro_no" ColumnName="pro_no" />
+          <ScalarProperty Name="text_15" ColumnName="text_15" />
+          <ScalarProperty Name="text_14" ColumnName="text_14" />
+          <ScalarProperty Name="text_13" ColumnName="text_13" />
+          <ScalarProperty Name="text_12" ColumnName="text_12" />
+          <ScalarProperty Name="text_11" ColumnName="text_11" />
+          <ScalarProperty Name="text_10" ColumnName="text_10" />
+          <ScalarProperty Name="text_9" ColumnName="text_9" />
+          <ScalarProperty Name="text_8" ColumnName="text_8" />
+          <ScalarProperty Name="text_7" ColumnName="text_7" />
+          <ScalarProperty Name="text_6" ColumnName="text_6" />
+          <ScalarProperty Name="text_5" ColumnName="text_5" />
+          <ScalarProperty Name="text_4" ColumnName="text_4" />
+          <ScalarProperty Name="text_3" ColumnName="text_3" />
+          <ScalarProperty Name="text_2" ColumnName="text_2" />
+          <ScalarProperty Name="text_1" ColumnName="text_1" />
+          <ScalarProperty Name="imgurl5" ColumnName="imgurl5" />
+          <ScalarProperty Name="imgurl3" ColumnName="imgurl3" />
+          <ScalarProperty Name="imgurl4" ColumnName="imgurl4" />
+          <ScalarProperty Name="imgurl2" ColumnName="imgurl2" />
+          <ScalarProperty Name="imgurl1" ColumnName="imgurl1" />
+          <ScalarProperty Name="imgurl" ColumnName="imgurl" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="fontstyle" ColumnName="fontstyle" />
+          <ScalarProperty Name="handsize" ColumnName="handsize" />
+          <ScalarProperty Name="protype" ColumnName="protype" />
+          <ScalarProperty Name="memberprice" ColumnName="memberprice" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="orderId" ColumnName="orderId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_orderdetailAfterservice">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_orderdetailAfterservice">
+        <MappingFragment StoreEntitySet="view_orderdetailAfterservice">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="productNo" ColumnName="productNo" />
+          <ScalarProperty Name="imgurl" ColumnName="imgurl" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AfterServiceNo" ColumnName="AfterServiceNo" />
+          <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+          <ScalarProperty Name="AfterServiceDate" ColumnName="AfterServiceDate" />
+          <ScalarProperty Name="AfterServiceState" ColumnName="AfterServiceState" />
+          <ScalarProperty Name="KDeliveryNumbers" ColumnName="KDeliveryNumbers" />
+          <ScalarProperty Name="KDeliveryName" ColumnName="KDeliveryName" />
+          <ScalarProperty Name="KDeliveryType" ColumnName="KDeliveryType" />
+          <ScalarProperty Name="KRemarks" ColumnName="KRemarks" />
+          <ScalarProperty Name="TypeService" ColumnName="TypeService" />
+          <ScalarProperty Name="AfterServiceId" ColumnName="AfterServiceId" />
+          <ScalarProperty Name="fdiamondId" ColumnName="fdiamondId" />
+          <ScalarProperty Name="diamondId" ColumnName="diamondId" />
+          <ScalarProperty Name="isNewWeb" ColumnName="isNewWeb" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="fontstyle" ColumnName="fontstyle" />
+          <ScalarProperty Name="handsize" ColumnName="handsize" />
+          <ScalarProperty Name="protype" ColumnName="protype" />
+          <ScalarProperty Name="memberprice" ColumnName="memberprice" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="orderId" ColumnName="orderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_orderdetailnewexl">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_orderdetailnewexl">
+        <MappingFragment StoreEntitySet="view_orderdetailnewexl">
+          <ScalarProperty Name="memberprice" ColumnName="memberprice" />
+          <ScalarProperty Name="ordertotal" ColumnName="ordertotal" />
+          <ScalarProperty Name="sitenote" ColumnName="sitenote" />
+          <ScalarProperty Name="fontstyle" ColumnName="fontstyle" />
+          <ScalarProperty Name="handsize" ColumnName="handsize" />
+          <ScalarProperty Name="material" ColumnName="material" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="gmobile" ColumnName="gmobile" />
+          <ScalarProperty Name="girlfriendname" ColumnName="girlfriendname" />
+          <ScalarProperty Name="realname" ColumnName="realname" />
+          <ScalarProperty Name="latetime" ColumnName="latetime" />
+          <ScalarProperty Name="paytype" ColumnName="paytype" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="orderid" ColumnName="orderid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="did" ColumnName="did" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="protype" ColumnName="protype" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_orderdiamond">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_orderdiamond">
+        <MappingFragment StoreEntitySet="view_orderdiamond">
+          <ScalarProperty Name="fptid" ColumnName="fptid" />
+          <ScalarProperty Name="zptid" ColumnName="zptid" />
+          <ScalarProperty Name="ffluo" ColumnName="ffluo" />
+          <ScalarProperty Name="fsymmetry" ColumnName="fsymmetry" />
+          <ScalarProperty Name="fpolish" ColumnName="fpolish" />
+          <ScalarProperty Name="zfluo" ColumnName="zfluo" />
+          <ScalarProperty Name="zsymmetry" ColumnName="zsymmetry" />
+          <ScalarProperty Name="zpolish" ColumnName="zpolish" />
+          <ScalarProperty Name="orderId" ColumnName="orderId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="fnumber" ColumnName="fnumber" />
+          <ScalarProperty Name="znumber" ColumnName="znumber" />
+          <ScalarProperty Name="fclarity" ColumnName="fclarity" />
+          <ScalarProperty Name="fcut" ColumnName="fcut" />
+          <ScalarProperty Name="fcolor" ColumnName="fcolor" />
+          <ScalarProperty Name="fct" ColumnName="fct" />
+          <ScalarProperty Name="fprice" ColumnName="fprice" />
+          <ScalarProperty Name="zcut" ColumnName="zcut" />
+          <ScalarProperty Name="zcolor" ColumnName="zcolor" />
+          <ScalarProperty Name="zclarity" ColumnName="zclarity" />
+          <ScalarProperty Name="zct" ColumnName="zct" />
+          <ScalarProperty Name="zprice" ColumnName="zprice" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="fdiamondId" ColumnName="fdiamondId" />
+          <ScalarProperty Name="diamondId" ColumnName="diamondId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_OrderLog">
+      <EntityTypeMapping TypeName="DarryJewelryModel.View_OrderLog">
+        <MappingFragment StoreEntitySet="View_OrderLog">
+          <ScalarProperty Name="sellerName" ColumnName="sellerName" />
+          <ScalarProperty Name="log_type" ColumnName="log_type" />
+          <ScalarProperty Name="op_type" ColumnName="op_type" />
+          <ScalarProperty Name="op_name" ColumnName="op_name" />
+          <ScalarProperty Name="op_id" ColumnName="op_id" />
+          <ScalarProperty Name="log_text" ColumnName="log_text" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="orderid" ColumnName="orderid" />
+          <ScalarProperty Name="log_id" ColumnName="log_id" />
+          <ScalarProperty Name="SellerId" ColumnName="SellerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_OrderMember">
+      <EntityTypeMapping TypeName="DarryJewelryModel.View_OrderMember">
+        <MappingFragment StoreEntitySet="View_OrderMember">
+          <ScalarProperty Name="isNewWeb" ColumnName="isNewWeb" />
+          <ScalarProperty Name="latetime" ColumnName="latetime" />
+          <ScalarProperty Name="SellerId" ColumnName="SellerId" />
+          <ScalarProperty Name="deliverytime" ColumnName="deliverytime" />
+          <ScalarProperty Name="SMSphone" ColumnName="SMSphone" />
+          <ScalarProperty Name="payid" ColumnName="payid" />
+          <ScalarProperty Name="paytype" ColumnName="paytype" />
+          <ScalarProperty Name="kdtype" ColumnName="kdtype" />
+          <ScalarProperty Name="kdid" ColumnName="kdid" />
+          <ScalarProperty Name="kdgs" ColumnName="kdgs" />
+          <ScalarProperty Name="sitenote" ColumnName="sitenote" />
+          <ScalarProperty Name="qq" ColumnName="qq" />
+          <ScalarProperty Name="postip" ColumnName="postip" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="ordernote" ColumnName="ordernote" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="orderid" ColumnName="orderid" />
+          <ScalarProperty Name="XmlFilePath" ColumnName="XmlFilePath" />
+          <ScalarProperty Name="ordertotal" ColumnName="ordertotal" />
+          <ScalarProperty Name="telephone" ColumnName="telephone" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="postcode" ColumnName="postcode" />
+          <ScalarProperty Name="GirlfriendName" ColumnName="GirlfriendName" />
+          <ScalarProperty Name="GMobile" ColumnName="GMobile" />
+          <ScalarProperty Name="GCard" ColumnName="GCard" />
+          <ScalarProperty Name="GName" ColumnName="GName" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="isbill" ColumnName="isbill" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="realname" ColumnName="realname" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_OutOrderExcel">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_OutOrderExcel">
+        <MappingFragment StoreEntitySet="view_OutOrderExcel">
+          <ScalarProperty Name="latetime" ColumnName="latetime" />
+          <ScalarProperty Name="ordertotal" ColumnName="ordertotal" />
+          <ScalarProperty Name="e_real_sale" ColumnName="e_real_sale" />
+          <ScalarProperty Name="e_sale" ColumnName="e_sale" />
+          <ScalarProperty Name="e_source" ColumnName="e_source" />
+          <ScalarProperty Name="e_OrderCode" ColumnName="e_OrderCode" />
+          <ScalarProperty Name="e_time" ColumnName="e_time" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_OutStock">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_OutStock">
+        <MappingFragment StoreEntitySet="view_OutStock">
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="goodsNo" ColumnName="goodsNo" />
+          <ScalarProperty Name="goodsName" ColumnName="goodsName" />
+          <ScalarProperty Name="modify_date" ColumnName="modify_date" />
+          <ScalarProperty Name="modify_by" ColumnName="modify_by" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="create_by" ColumnName="create_by" />
+          <ScalarProperty Name="StockType" ColumnName="StockType" />
+          <ScalarProperty Name="StockNum" ColumnName="StockNum" />
+          <ScalarProperty Name="GoodTypeId" ColumnName="GoodTypeId" />
+          <ScalarProperty Name="GoodId" ColumnName="GoodId" />
+          <ScalarProperty Name="OutCode" ColumnName="OutCode" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_pinkcustomers">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_pinkcustomers">
+        <MappingFragment StoreEntitySet="view_pinkcustomers">
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="userpwd" ColumnName="userpwd" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="realname" ColumnName="realname" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_Product">
+      <EntityTypeMapping TypeName="DarryJewelryModel.View_Product">
+        <MappingFragment StoreEntitySet="View_Product">
+          <ScalarProperty Name="CollectionId" ColumnName="CollectionId" />
+          <ScalarProperty Name="ProductType" ColumnName="ProductType" />
+          <ScalarProperty Name="salecount" ColumnName="salecount" />
+          <ScalarProperty Name="pSort" ColumnName="pSort" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="MemberPrice" ColumnName="MemberPrice" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="p_content" ColumnName="p_content" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="productTypeId" ColumnName="productTypeId" />
+          <ScalarProperty Name="productNo" ColumnName="productNo" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_product_dprice">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_product_dprice">
+        <MappingFragment StoreEntitySet="view_product_dprice">
+          <ScalarProperty Name="znumber" ColumnName="znumber" />
+          <ScalarProperty Name="ZDiamondPrice" ColumnName="ZDiamondPrice" />
+          <ScalarProperty Name="IsCustomPink" ColumnName="IsCustomPink" />
+          <ScalarProperty Name="IsCustomDiamond" ColumnName="IsCustomDiamond" />
+          <ScalarProperty Name="TJLZ" ColumnName="TJLZ" />
+          <ScalarProperty Name="fDiamondId" ColumnName="fDiamondId" />
+          <ScalarProperty Name="DiamondId" ColumnName="DiamondId" />
+          <ScalarProperty Name="CollectionId" ColumnName="CollectionId" />
+          <ScalarProperty Name="oldId" ColumnName="oldId" />
+          <ScalarProperty Name="salecount" ColumnName="salecount" />
+          <ScalarProperty Name="pSort" ColumnName="pSort" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="MemberPrice" ColumnName="MemberPrice" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="p_content" ColumnName="p_content" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="productTypeId" ColumnName="productTypeId" />
+          <ScalarProperty Name="productNo" ColumnName="productNo" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_product2">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_product2">
+        <MappingFragment StoreEntitySet="view_product2">
+          <ScalarProperty Name="mobile_pcontent" ColumnName="mobile_pcontent" />
+          <ScalarProperty Name="clicknum" ColumnName="clicknum" />
+          <ScalarProperty Name="IsCustomPink" ColumnName="IsCustomPink" />
+          <ScalarProperty Name="IsCustomDiamond" ColumnName="IsCustomDiamond" />
+          <ScalarProperty Name="TJLZ" ColumnName="TJLZ" />
+          <ScalarProperty Name="CollectionId" ColumnName="CollectionId" />
+          <ScalarProperty Name="fDiamondId" ColumnName="fDiamondId" />
+          <ScalarProperty Name="DiamondId" ColumnName="DiamondId" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="MemberPrice" ColumnName="MemberPrice" />
+          <ScalarProperty Name="fnumber" ColumnName="fnumber" />
+          <ScalarProperty Name="znumber" ColumnName="znumber" />
+          <ScalarProperty Name="fcut" ColumnName="fcut" />
+          <ScalarProperty Name="fcolor" ColumnName="fcolor" />
+          <ScalarProperty Name="fclarity" ColumnName="fclarity" />
+          <ScalarProperty Name="fct" ColumnName="fct" />
+          <ScalarProperty Name="fcode" ColumnName="fcode" />
+          <ScalarProperty Name="fDiamondPrice" ColumnName="fDiamondPrice" />
+          <ScalarProperty Name="zcut" ColumnName="zcut" />
+          <ScalarProperty Name="zcolor" ColumnName="zcolor" />
+          <ScalarProperty Name="zclarity" ColumnName="zclarity" />
+          <ScalarProperty Name="zct" ColumnName="zct" />
+          <ScalarProperty Name="zcode" ColumnName="zcode" />
+          <ScalarProperty Name="DiamondPrice" ColumnName="DiamondPrice" />
+          <ScalarProperty Name="imgurl2" ColumnName="imgurl2" />
+          <ScalarProperty Name="imgurl" ColumnName="imgurl" />
+          <ScalarProperty Name="HandInch" ColumnName="HandInch" />
+          <ScalarProperty Name="kuanshi" ColumnName="kuanshi" />
+          <ScalarProperty Name="KimWeigth" ColumnName="KimWeigth" />
+          <ScalarProperty Name="CertificateCode" ColumnName="CertificateCode" />
+          <ScalarProperty Name="CertificateType" ColumnName="CertificateType" />
+          <ScalarProperty Name="salecount" ColumnName="salecount" />
+          <ScalarProperty Name="pSort" ColumnName="pSort" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="p_content" ColumnName="p_content" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="productTypeId" ColumnName="productTypeId" />
+          <ScalarProperty Name="productNo" ColumnName="productNo" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_Product3">
+      <EntityTypeMapping TypeName="DarryJewelryModel.View_Product3">
+        <MappingFragment StoreEntitySet="View_Product3">
+          <ScalarProperty Name="CollectionId" ColumnName="CollectionId" />
+          <ScalarProperty Name="ProductType" ColumnName="ProductType" />
+          <ScalarProperty Name="salecount" ColumnName="salecount" />
+          <ScalarProperty Name="pSort" ColumnName="pSort" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="MemberPrice" ColumnName="MemberPrice" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="p_content" ColumnName="p_content" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="productTypeId" ColumnName="productTypeId" />
+          <ScalarProperty Name="productNo" ColumnName="productNo" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="HandInch" ColumnName="HandInch" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_ProductGoodsShip">
+      <EntityTypeMapping TypeName="DarryJewelryModel.View_ProductGoodsShip">
+        <MappingFragment StoreEntitySet="View_ProductGoodsShip">
+          <ScalarProperty Name="goodsId" ColumnName="goodsId" />
+          <ScalarProperty Name="goodsTypeId" ColumnName="goodsTypeId" />
+          <ScalarProperty Name="productId" ColumnName="productId" />
+          <ScalarProperty Name="goodsName" ColumnName="goodsName" />
+          <ScalarProperty Name="goodsNo" ColumnName="goodsNo" />
+          <ScalarProperty Name="goodsTypeName" ColumnName="goodsTypeName" />
+          <ScalarProperty Name="productName" ColumnName="productName" />
+          <ScalarProperty Name="productNo" ColumnName="productNo" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_ringcare">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_ringcare">
+        <MappingFragment StoreEntitySet="view_ringcare">
+          <ScalarProperty Name="productType" ColumnName="productType" />
+          <ScalarProperty Name="isChoose" ColumnName="isChoose" />
+          <ScalarProperty Name="IsCustomPink" ColumnName="IsCustomPink" />
+          <ScalarProperty Name="IsCustomDiamond" ColumnName="IsCustomDiamond" />
+          <ScalarProperty Name="TJLZ" ColumnName="TJLZ" />
+          <ScalarProperty Name="fDiamondId" ColumnName="fDiamondId" />
+          <ScalarProperty Name="DiamondId" ColumnName="DiamondId" />
+          <ScalarProperty Name="CollectionId" ColumnName="CollectionId" />
+          <ScalarProperty Name="oldId" ColumnName="oldId" />
+          <ScalarProperty Name="salecount" ColumnName="salecount" />
+          <ScalarProperty Name="pSort" ColumnName="pSort" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="MemberPrice" ColumnName="MemberPrice" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="p_content" ColumnName="p_content" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="productTypeId" ColumnName="productTypeId" />
+          <ScalarProperty Name="productNo" ColumnName="productNo" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_ShopSub">
+      <EntityTypeMapping TypeName="DarryJewelryModel.View_ShopSub">
+        <MappingFragment StoreEntitySet="View_ShopSub">
+          <ScalarProperty Name="shopitem" ColumnName="shopitem" />
+          <ScalarProperty Name="shopname" ColumnName="shopname" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="subtel" ColumnName="subtel" />
+          <ScalarProperty Name="subname" ColumnName="subname" />
+          <ScalarProperty Name="subtime" ColumnName="subtime" />
+          <ScalarProperty Name="subdate" ColumnName="subdate" />
+          <ScalarProperty Name="itemid" ColumnName="itemid" />
+          <ScalarProperty Name="shopid" ColumnName="shopid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_User">
+      <EntityTypeMapping TypeName="DarryJewelryModel.View_User">
+        <MappingFragment StoreEntitySet="View_User">
+          <ScalarProperty Name="DepartName" ColumnName="DepartName" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="realname" ColumnName="realname" />
+          <ScalarProperty Name="DepartId" ColumnName="DepartId" />
+          <ScalarProperty Name="lastloginip" ColumnName="lastloginip" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="module" ColumnName="module" />
+          <ScalarProperty Name="islock" ColumnName="islock" />
+          <ScalarProperty Name="lastlogintime" ColumnName="lastlogintime" />
+          <ScalarProperty Name="logincount" ColumnName="logincount" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_User_Reception">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_User_Reception">
+        <MappingFragment StoreEntitySet="view_User_Reception">
+          <ScalarProperty Name="ReceptionDate" ColumnName="ReceptionDate" />
+          <ScalarProperty Name="ReceptionId" ColumnName="ReceptionId" />
+          <ScalarProperty Name="ReceptionUser" ColumnName="ReceptionUser" />
+          <ScalarProperty Name="ReceptionCon" ColumnName="ReceptionCon" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="ReceptionType" ColumnName="ReceptionType" />
+          <ScalarProperty Name="ReceptionOrder" ColumnName="ReceptionOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_workorder">
+      <EntityTypeMapping TypeName="DarryJewelryModel.view_workorder">
+        <MappingFragment StoreEntitySet="view_workorder">
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="orderid" ColumnName="orderid" />
+          <ScalarProperty Name="deliverytime" ColumnName="deliverytime" />
+          <ScalarProperty Name="GirlfriendName" ColumnName="GirlfriendName" />
+          <ScalarProperty Name="realname" ColumnName="realname" />
+          <ScalarProperty Name="JTInventory_id" ColumnName="JTInventory_id" />
+          <ScalarProperty Name="lZInventory_id" ColumnName="lZInventory_id" />
+          <ScalarProperty Name="RingCode" ColumnName="RingCode" />
+          <ScalarProperty Name="ImgBarUrl" ColumnName="ImgBarUrl" />
+          <ScalarProperty Name="FYg" ColumnName="FYg" />
+          <ScalarProperty Name="Yg" ColumnName="Yg" />
+          <ScalarProperty Name="FCut3" ColumnName="FCut3" />
+          <ScalarProperty Name="FCut2" ColumnName="FCut2" />
+          <ScalarProperty Name="Cut3" ColumnName="Cut3" />
+          <ScalarProperty Name="Cut2" ColumnName="Cut2" />
+          <ScalarProperty Name="Modify_date" ColumnName="Modify_date" />
+          <ScalarProperty Name="Modify_by" ColumnName="Modify_by" />
+          <ScalarProperty Name="Create_date" ColumnName="Create_date" />
+          <ScalarProperty Name="Create_by" ColumnName="Create_by" />
+          <ScalarProperty Name="sku_id" ColumnName="sku_id" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="ProName" ColumnName="ProName" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="Fontstyle" ColumnName="Fontstyle" />
+          <ScalarProperty Name="Handsize" ColumnName="Handsize" />
+          <ScalarProperty Name="MCt" ColumnName="MCt" />
+          <ScalarProperty Name="FCount" ColumnName="FCount" />
+          <ScalarProperty Name="CCount" ColumnName="CCount" />
+          <ScalarProperty Name="FColor" ColumnName="FColor" />
+          <ScalarProperty Name="FCut" ColumnName="FCut" />
+          <ScalarProperty Name="FClarity" ColumnName="FClarity" />
+          <ScalarProperty Name="FCt" ColumnName="FCt" />
+          <ScalarProperty Name="Cut" ColumnName="Cut" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Clarity" ColumnName="Clarity" />
+          <ScalarProperty Name="Ct" ColumnName="Ct" />
+          <ScalarProperty Name="Order_id" ColumnName="Order_id" />
+          <ScalarProperty Name="Wo_status" ColumnName="Wo_status" />
+          <ScalarProperty Name="Wo_code" ColumnName="Wo_code" />
+          <ScalarProperty Name="Wo_id" ColumnName="Wo_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

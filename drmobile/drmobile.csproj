@@ -1,0 +1,2022 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{978743C1-CDB1-43D4-B013-B722766DBCD6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>drmobile</RootNamespace>
+    <AssemblyName>drmobile</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>true</IISExpressUseClassicPipelineMode>
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.7.4114.6375, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.1.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="ChinaPay_tsl, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>bin\ChinaPay_tsl.dll</HintPath>
+    </Reference>
+    <Reference Include="ClassHmac2003, Version=1.0.2564.40224, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ClassHmac2003.dll</HintPath>
+    </Reference>
+    <Reference Include="Flurl, Version=3.0.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Flurl.3.0.6\lib\net472\Flurl.dll</HintPath>
+    </Reference>
+    <Reference Include="Flurl.Http, Version=3.2.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Flurl.Http.3.2.4\lib\net472\Flurl.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DRM.Common\bin\Framework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.Configuration, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.7.0.0\lib\net462\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.7.0.0\lib\net462\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Binder.7.0.0\lib\net462\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.CommandLine, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.CommandLine.7.0.0\lib\net462\Microsoft.Extensions.Configuration.CommandLine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.EnvironmentVariables, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.EnvironmentVariables.7.0.0\lib\net462\Microsoft.Extensions.Configuration.EnvironmentVariables.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.FileExtensions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.FileExtensions.7.0.0\lib\net462\Microsoft.Extensions.Configuration.FileExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Json.6.0.0\lib\net461\Microsoft.Extensions.Configuration.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.UserSecrets, Version=6.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.UserSecrets.6.0.1\lib\net461\Microsoft.Extensions.Configuration.UserSecrets.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.7.0.0\lib\net462\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.7.0.0\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Abstractions.7.0.0\lib\net462\Microsoft.Extensions.FileProviders.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Physical, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Physical.7.0.0\lib\net462\Microsoft.Extensions.FileProviders.Physical.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileSystemGlobbing, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileSystemGlobbing.7.0.0\lib\net462\Microsoft.Extensions.FileSystemGlobbing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Hosting, Version=6.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Hosting.6.0.1\lib\net461\Microsoft.Extensions.Hosting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Hosting.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Hosting.Abstractions.7.0.0\lib\net462\Microsoft.Extensions.Hosting.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Http, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Http.7.0.0\lib\net462\Microsoft.Extensions.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.7.0.0\lib\net462\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.7.0.0\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Configuration, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Configuration.7.0.0\lib\net462\Microsoft.Extensions.Logging.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Console, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Console.6.0.0\lib\net461\Microsoft.Extensions.Logging.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Debug, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Debug.7.0.0\lib\net462\Microsoft.Extensions.Logging.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.EventLog, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.EventLog.7.0.0\lib\net462\Microsoft.Extensions.Logging.EventLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.EventSource, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.EventSource.6.0.0\lib\net461\Microsoft.Extensions.Logging.EventSource.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.7.0.0\lib\net462\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options.ConfigurationExtensions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.ConfigurationExtensions.7.0.0\lib\net462\Microsoft.Extensions.Options.ConfigurationExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.7.0.0\lib\net462\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="NetDimension.Weibo, Version=1.40.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\NetDimension.Weibo.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="QConnectSDK, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\QConnectSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=102.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Senparc.CO2NET, Version=2.1.7.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Senparc.CO2NET.2.1.7.3\lib\net462\Senparc.CO2NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Senparc.CO2NET.APM, Version=1.2.4.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Senparc.CO2NET.APM.1.2.4.6\lib\net462\Senparc.CO2NET.APM.dll</HintPath>
+    </Reference>
+    <Reference Include="Senparc.CO2NET.AspNet, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Senparc.CO2NET.AspNet.1.1.2\lib\net462\Senparc.CO2NET.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Senparc.NeuChar, Version=2.1.3.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Senparc.NeuChar.2.1.3.6\lib\net462\Senparc.NeuChar.dll</HintPath>
+    </Reference>
+    <Reference Include="Senparc.NeuChar.App, Version=1.1.4.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Senparc.NeuChar.App.1.1.4.6\lib\net462\Senparc.NeuChar.App.dll</HintPath>
+    </Reference>
+    <Reference Include="Senparc.Weixin, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZGJY.Weixin.1.0.1\lib\net45\Senparc.Weixin.dll</HintPath>
+    </Reference>
+    <Reference Include="Senparc.Weixin.MP, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZGJY.Weixin.MP.1.0.2\lib\net45\Senparc.Weixin.MP.dll</HintPath>
+    </Reference>
+    <Reference Include="Senparc.Weixin.TenPay, Version=1.12.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Senparc.Weixin.TenPay.1.12.4\lib\net462\Senparc.Weixin.TenPay.dll</HintPath>
+    </Reference>
+    <Reference Include="Senparc.Weixin.WxOpen, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZGJY.Weixin.WxOpen.1.0.3\lib\net45\Senparc.Weixin.WxOpen.dll</HintPath>
+    </Reference>
+    <Reference Include="SKIT.FlurlHttpClient.Common, Version=2.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SKIT.FlurlHttpClient.Common.2.6.0\lib\net461\SKIT.FlurlHttpClient.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.7.0.0\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.1\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.7.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=7.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.7.0.2\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="URLRewriter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\URLRewriter.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\dr_QQCallBackURL.aspx" />
+    <Content Include="Account\ForgetPwd.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\LoginThirdParty.aspx" />
+    <Content Include="Account\LoginToQQ.aspx" />
+    <Content Include="Account\MyInfo.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\SinaCallBackURL.aspx" />
+    <Content Include="AddAddress.aspx" />
+    <Content Include="Address.aspx" />
+    <Content Include="AfterService.aspx" />
+    <Content Include="AfterServiceView.aspx" />
+    <Content Include="All_List.aspx" />
+    <Content Include="API\Comment.aspx" />
+    <Content Include="API\DiamondAPI.aspx" />
+    <Content Include="API\NewsList.aspx" />
+    <Content Include="BankPayList.aspx" />
+    <Content Include="BataStyle\iconfont.inc" />
+    <Content Include="BataStyle\mb_same.inc" />
+    <Content Include="bin\BouncyCastle.Crypto.dll" />
+    <Content Include="bin\DRM.BLL.dll" />
+    <Content Include="bin\DRM.BLL.pdb" />
+    <Content Include="bin\DRM.Common.dll" />
+    <Content Include="bin\DRM.Common.pdb" />
+    <Content Include="bin\DRM.DAL.dll" />
+    <Content Include="bin\DRM.DAL.pdb" />
+    <Content Include="bin\DRM.Entity.dll" />
+    <Content Include="bin\DRM.Entity.pdb" />
+    <Content Include="bin\drmobile.dll" />
+    <Content Include="bin\drmobile.pdb" />
+    <Content Include="bin\Enyim.Caching.dll" />
+    <Content Include="bin\Framework.Common.dll" />
+    <Content Include="bin\NetDimension.Weibo.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\QConnectSDK.dll" />
+    <Content Include="bin\RestSharp.dll" />
+    <Content Include="bin\URLRewriter.dll" />
+    <Content Include="bracelet_list.aspx" />
+    <Content Include="brand.aspx" />
+    <Content Include="CartOrderDetail.aspx" />
+    <Content Include="chinapay\default.aspx" />
+    <Content Include="chinapay\qt.aspx" />
+    <Content Include="Comment\Comment.aspx" />
+    <Content Include="Comment\EmptyComment.aspx" />
+    <Content Include="Comment\MyComment.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="ctcg.aspx" />
+    <Content Include="ctyz.aspx" />
+    <Content Include="Culture_List.aspx" />
+    <Content Include="CustomerService\Center.aspx" />
+    <Content Include="CustomerService\Detail.aspx" />
+    <Content Include="DarryFail.aspx" />
+    <Content Include="DarrySuccess.aspx" />
+    <Content Include="diamonctringforever_list.aspx" />
+    <Content Include="diamonctringiswear_list.aspx" />
+    <Content Include="diamonctringmyheart_list.aspx" />
+    <Content Include="diamonctringtruelove_list.aspx" />
+    <Content Include="diamondringPrincess_list.aspx" />
+    <Content Include="diamondring_list.aspx" />
+    <Content Include="drcg.aspx" />
+    <Content Include="dring_detail.aspx" />
+    <Content Include="dryz.aspx" />
+    <Content Include="earrings_list.aspx" />
+    <Content Include="EmptyAddress.aspx" />
+    <Content Include="EmptyAfterService.aspx" />
+    <Content Include="EmptyCart.aspx" />
+    <Content Include="EmptyCollect.aspx" />
+    <Content Include="EmptyOrder.aspx" />
+    <Content Include="fansshow.aspx" />
+    <Content Include="Feedback.aspx" />
+    <Content Include="fonts\iconfont.svg" />
+    <Content Include="help.aspx" />
+    <Content Include="helpCenter\HandsizeHelp.aspx" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\1.png" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\al_right.jpg" />
+    <Content Include="images\a_j.jpg" />
+    <Content Include="images\big.jpg" />
+    <Content Include="images\dd.jpg" />
+    <Content Include="images\del.jpg" />
+    <Content Include="images\dj.jpg" />
+    <Content Include="images\DR_logo.jpg" />
+    <Content Include="images\eh.jpg" />
+    <Content Include="images\erh.jpg" />
+    <Content Include="images\f.jpg" />
+    <Content Include="images\foot.jpg" />
+    <Content Include="images\forever.jpg" />
+    <Content Include="images\gb.jpg" />
+    <Content Include="images\index_b.jpg" />
+    <Content Include="images\jewely.jpg" />
+    <Content Include="images\jh.jpg" />
+    <Content Include="images\left.jpg" />
+    <Content Include="images\ljt.jpg" />
+    <Content Include="images\lz.jpg" />
+    <Content Include="images\manring.jpg" />
+    <Content Include="images\mr.jpg" />
+    <Content Include="images\necklace.jpg" />
+    <Content Include="images\nj.jpg" />
+    <Content Include="images\p1.jpg" />
+    <Content Include="images\password.jpg" />
+    <Content Include="images\pop.jpg" />
+    <Content Include="images\qh.jpg" />
+    <Content Include="images\qhzj.jpg" />
+    <Content Include="images\right.jpg" />
+    <Content Include="images\ring.jpg" />
+    <Content Include="images\shoul.jpg" />
+    <Content Include="images\sl.jpg" />
+    <Content Include="images\sp_ring.jpg" />
+    <Content Include="images\st.jpg" />
+    <Content Include="images\story.jpg" />
+    <Content Include="images\sz.jpg" />
+    <Content Include="images\t-ring.jpg" />
+    <Content Include="images\tel.jpg" />
+    <Content Include="images\tel.png" />
+    <Content Include="images\top.jpg" />
+    <Content Include="images\tr.jpg" />
+    <Content Include="images\ty.jpg" />
+    <Content Include="images\wrong.jpg" />
+    <Content Include="images\xiala.jpg" />
+    <Content Include="images\xl.jpg" />
+    <Content Include="images\xy.jpg" />
+    <Content Include="images\zj.jpg" />
+    <Content Include="index_list.aspx" />
+    <Content Include="IsBuyDarry.aspx" />
+    <Content Include="jewellery_detail.aspx" />
+    <Content Include="jewellery_list.aspx" />
+    <Content Include="Lovewall_Article.aspx" />
+    <Content Include="LoveWall_List.aspx" />
+    <Content Include="mactdetail.aspx" />
+    <Content Include="mactivity.aspx" />
+    <Content Include="manring_detail.aspx" />
+    <Content Include="mcss\iconfont.css" />
+    <Content Include="mcss\mb_same.css" />
+    <Content Include="MemberCenter.aspx" />
+    <Content Include="mimages\1Forever1.jpg" />
+    <Content Include="mimages\2Marry-me1.jpg" />
+    <Content Include="mimages\3My-heart1.jpg" />
+    <Content Include="mimages\4True-Love1.jpg" />
+    <Content Include="mimages\close.png" />
+    <Content Include="mimages\db.png" />
+    <Content Include="mimages\dr_cp\al_ring.jpg" />
+    <Content Include="mimages\dr_cp\btm.png" />
+    <Content Include="mimages\dr_cp\b_bot.jpg" />
+    <Content Include="mimages\dr_cp\b_cener.jpg" />
+    <Content Include="mimages\dr_cp\b_Top.jpg" />
+    <Content Include="mimages\dr_cp\click_xs.png" />
+    <Content Include="mimages\dr_cp\click_xx.png" />
+    <Content Include="mimages\dr_cp\lxkf.png" />
+    <Content Include="mimages\dr_cp\money.png" />
+    <Content Include="mimages\dr_cp\more_choose.jpg" />
+    <Content Include="mimages\dr_cp\mrxs.png" />
+    <Content Include="mimages\dr_cp\pay_1.png" />
+    <Content Include="mimages\dr_cp\pay_2.jpg" />
+    <Content Include="mimages\dr_cp\pay_3.jpg" />
+    <Content Include="mimages\dr_cp\pay_4.jpg" />
+    <Content Include="mimages\dr_cp\qrdd.png" />
+    <Content Include="mimages\dr_cp\right_gou.png" />
+    <Content Include="mimages\dr_cp\ring_2.jpg" />
+    <Content Include="mimages\dr_cp\rp_bottom.png" />
+    <Content Include="mimages\dr_cp\smile.png" />
+    <Content Include="mimages\dr_cp\sring.jpg" />
+    <Content Include="mimages\dr_cp\ss_bt.png" />
+    <Content Include="mimages\dr_cp\s_right.png" />
+    <Content Include="mimages\dr_cp\t1.jpg" />
+    <Content Include="mimages\dr_cp\t2.jpg" />
+    <Content Include="mimages\dr_cp\t3.jpg" />
+    <Content Include="mimages\dr_cp\tom.png" />
+    <Content Include="mimages\dr_cp\xx.png" />
+    <Content Include="mimages\dr_cp\xx_bt.png" />
+    <Content Include="mimages\dr_cp\xx_click.png" />
+    <Content Include="mimages\dr_cp\xy.png" />
+    <Content Include="mimages\dr_cp\yz.png" />
+    <Content Include="mimages\dr_cp\zs.png" />
+    <Content Include="mimages\dr_fans\fans1.jpg" />
+    <Content Include="mimages\dr_fans\fans2.jpg" />
+    <Content Include="mimages\dr_fans\fans3.jpg" />
+    <Content Include="mimages\dr_fans\fans4.jpg" />
+    <Content Include="mimages\dr_fans\fans5.jpg" />
+    <Content Include="mimages\dr_kf\buy_xz.png" />
+    <Content Include="mimages\dr_kf\dz.png" />
+    <Content Include="mimages\dr_kf\fh.png" />
+    <Content Include="mimages\dr_kf\kf.png" />
+    <Content Include="mimages\dr_kf\love.png" />
+    <Content Include="mimages\dr_kf\shorder.png" />
+    <Content Include="mimages\dr_kf\store.png" />
+    <Content Include="mimages\dr_kf\tel.png" />
+    <Content Include="mimages\dr_kf\yj.png" />
+    <Content Include="mimages\dr_kf\zs.png" />
+    <Content Include="mimages\dr_member\adress_top.jpg" />
+    <Content Include="mimages\dr_member\bottom.png" />
+    <Content Include="mimages\dr_member\box.png" />
+    <Content Include="mimages\dr_member\box_click.png" />
+    <Content Include="mimages\dr_member\cg.png" />
+    <Content Include="mimages\dr_member\dd.png" />
+    <Content Include="mimages\dr_member\dr_kj.png" />
+    <Content Include="mimages\dr_member\fail.png" />
+    <Content Include="mimages\dr_member\hd.jpg" />
+    <Content Include="mimages\dr_member\noadress.png" />
+    <Content Include="mimages\dr_member\noshop.png" />
+    <Content Include="mimages\dr_member\qq.png" />
+    <Content Include="mimages\dr_member\qq_click.png" />
+    <Content Include="mimages\dr_member\sc1.jpg" />
+    <Content Include="mimages\dr_member\sc2.jpg" />
+    <Content Include="mimages\dr_member\sc3.jpg" />
+    <Content Include="mimages\dr_member\sc4.jpg" />
+    <Content Include="mimages\dr_member\sc5.jpg" />
+    <Content Include="mimages\dr_member\sc6.jpg" />
+    <Content Include="mimages\dr_member\sc7.jpg" />
+    <Content Include="mimages\dr_member\shop.png" />
+    <Content Include="mimages\dr_member\star.png" />
+    <Content Include="mimages\dr_member\star_click.png" />
+    <Content Include="mimages\dr_member\xd.png" />
+    <Content Include="mimages\dr_member\xd_click.png" />
+    <Content Include="mimages\dr_new\b_right.png" />
+    <Content Include="mimages\dr_new\dr1.png" />
+    <Content Include="mimages\dr_new\dr2.png" />
+    <Content Include="mimages\dr_new\dr3.png" />
+    <Content Include="mimages\dr_new\dr4.png" />
+    <Content Include="mimages\dr_new\img1.jpg" />
+    <Content Include="mimages\dr_new\rp.jpg" />
+    <Content Include="mimages\dr_new\st.jpg" />
+    <Content Include="mimages\dr_new\wr.png" />
+    <Content Include="mimages\dr_shop\cq1.jpg" />
+    <Content Include="mimages\dr_shop\cq2.jpg" />
+    <Content Include="mimages\dr_shop\gz1.jpg" />
+    <Content Include="mimages\dr_shop\gz2.jpg" />
+    <Content Include="mimages\dr_shop\sh1.jpg" />
+    <Content Include="mimages\dr_shop\sh2.jpg" />
+    <Content Include="mimages\dr_star\bt.png" />
+    <Content Include="mimages\dr_yz\5.jpg" />
+    <Content Include="mimages\5I-Swear1.jpg" />
+    <Content Include="mimages\dr_yz\6.jpg" />
+    <Content Include="mimages\dr_yz\7.jpg" />
+    <Content Include="mimages\dr_yz\8.jpg" />
+    <Content Include="mimages\banner.jpg" />
+    <Content Include="mimages\cp1.jpg" />
+    <Content Include="mimages\dp.jpg" />
+    <Content Include="mimages\5a.jpg" />
+    <Content Include="mimages\dr_ative\at1.jpg" />
+    <Content Include="mimages\dr_ative\hd1.jpg" />
+    <Content Include="mimages\dr_ative\pink_it.jpg" />
+    <Content Include="mimages\dr_yz\Believe.jpg" />
+    <Content Include="mimages\dr_yz\Forever.jpg" />
+    <Content Include="mimages\dr_yz\My Heartjd.jpg" />
+    <Content Include="mimages\dr_yz\My heartsh.jpg" />
+    <Content Include="mimages\fbaner.jpg" />
+    <Content Include="mimages\fzit.jpg" />
+    <Content Include="mimages\fz_buy.jpg" />
+    <Content Include="mimages\hd2.jpg" />
+    <Content Include="mimages\hd3.jpg" />
+    <Content Include="mimages\line.jpg" />
+    <Content Include="mimages\love_zs.jpg" />
+    <Content Include="mimages\qq.png" />
+    <Content Include="mimages\rpline.jpg" />
+    <Content Include="mimages\rsar.png" />
+    <Content Include="mimages\shou.jpg" />
+    <Content Include="mimages\store.png" />
+    <Content Include="mimages\tel.jpg" />
+    <Content Include="mimages\thestore.png" />
+    <Content Include="mimages\wad.png" />
+    <Content Include="mimages\wb.png" />
+    <Content Include="mimages\wx.png" />
+    <Content Include="mimages\xsd.jpg" />
+    <Content Include="mimages\m.jpg" />
+    <Content Include="mimages\dr_barand\gy1.jpg" />
+    <Content Include="mimages\dr_barand\gy2.jpg" />
+    <Content Include="mimages\dr_barand\gy3.jpg" />
+    <Content Include="mimages\dr_barand\gy4.jpg" />
+    <Content Include="mimages\dr_barand\love.png" />
+    <Content Include="mimages\dr_barand\other1.jpg" />
+    <Content Include="mimages\dr_barand\other2.jpg" />
+    <Content Include="mimages\dr_barand\other3.jpg" />
+    <Content Include="mimages\dr_barand\ring.png" />
+    <Content Include="mimages\dr_cp\bottom.png" />
+    <Content Include="mimages\dr_cp\djsp.png" />
+    <Content Include="mimages\dr_cp\dj_banner.jpg" />
+    <Content Include="mimages\dr_cp\dring_banner.jpg" />
+    <Content Include="mimages\dr_cp\jt.png" />
+    <Content Include="mimages\dr_cp\lct.png" />
+    <Content Include="mimages\dr_cp\mb1.png" />
+    <Content Include="mimages\dr_cp\mb2.png" />
+    <Content Include="mimages\dr_cp\mb3.png" />
+    <Content Include="mimages\dr_cp\mb4.png" />
+    <Content Include="mimages\dr_cp\mb5.png" />
+    <Content Include="mimages\dr_cp\mb6.png" />
+    <Content Include="mimages\dr_cp\mb_all.png" />
+    <Content Include="mimages\dr_cp\ring.jpg" />
+    <Content Include="mimages\dr_cp\ring.png" />
+    <Content Include="mimages\dr_shop\bj1.jpg" />
+    <Content Include="mimages\dr_shop\bj2.jpg" />
+    <Content Include="mimages\dr_shop\sz1.jpg" />
+    <Content Include="mimages\dr_shop\sz2.jpg" />
+    <Content Include="mimages\dr_star\b1.jpg" />
+    <Content Include="mimages\dr_star\right_it.png" />
+    <Content Include="mimages\dr_star\s1.jpg" />
+    <Content Include="mimages\dr_star\s2.jpg" />
+    <Content Include="mimages\dr_star\s3.jpg" />
+    <Content Include="mimages\dr_star\ssss.jpg" />
+    <Content Include="mimages\dr_star\star_ring.jpg" />
+    <Content Include="mimages\dr_star\star_ring.png" />
+    <Content Include="mimages\dr_star\tittle.png" />
+    <Content Include="mimages\dr_yz\bk.jpg" />
+    <Content Include="mimages\dr_yz\right.jpg" />
+    <Content Include="mimages\dr_yz\ring_cp.jpg" />
+    <Content Include="mimages\dr_yz\ring_cp.png" />
+    <Content Include="mimages\dr_yz\tm.png" />
+    <Content Include="mimages\dr_yz\yz_bk.jpg" />
+    <Content Include="mimages\dr_yz\yz_bk.png" />
+    <Content Include="mimages\fz.jpg" />
+    <Content Include="mimages\gy.jpg" />
+    <Content Include="mimages\hd1.jpg" />
+    <Content Include="mimages\logo.png" />
+    <Content Include="mimages\member.png" />
+    <Content Include="mimages\pre_next.png" />
+    <Content Include="mimages\search.png" />
+    <Content Include="mimages\wrong.png" />
+    <Content Include="mimages\zs_search.png" />
+    <Content Include="mindex.aspx" />
+    <Content Include="mjs\CustomControl.js" />
+    <Content Include="mjs\dr_buy.js" />
+    <Content Include="mjs\fhdb.js" />
+    <Content Include="mjs\horizontal.js" />
+    <Content Include="mjs\jquery.js" />
+    <Content Include="mjs\jquery.lazyload.min.js" />
+    <Content Include="mjs\left_nav.js" />
+    <Content Include="mjs\member.js" />
+    <Content Include="mjs\Success.js" />
+    <Content Include="mjs\TouchSlide.1.1.js" />
+    <Content Include="mjs\Wrong.js" />
+    <Content Include="mjs\zcdl.js" />
+    <Content Include="mstartdetail.aspx" />
+    <Content Include="mstartlist.aspx" />
+    <Content Include="muc\BuyControl.ascx" />
+    <Content Include="muc\CommodityInfo.ascx" />
+    <Content Include="muc\DiamondResult.ascx" />
+    <Content Include="muc\DiamondSearch.ascx" />
+    <Content Include="muc\footer.ascx" />
+    <Content Include="muc\Handsize.ascx" />
+    <Content Include="muc\header.ascx" />
+    <Content Include="muc\infoview.ascx" />
+    <Content Include="muc\Material.ascx" />
+    <Content Include="muc\newslist.ascx" />
+    <Content Include="muc\Paging.ascx" />
+    <Content Include="muc\PhonicsMaterial.ascx" />
+    <Content Include="muc\ProductImgView.ascx" />
+    <Content Include="muc\RelatedInfo.ascx" />
+    <Content Include="muc\website.ascx" />
+    <Content Include="muc\workflow.ascx" />
+    <Content Include="MyAddress.aspx" />
+    <Content Include="MyAddressChoose.aspx" />
+    <Content Include="MyAfterService.aspx" />
+    <Content Include="MyCollect.aspx" />
+    <Content Include="MyInfo.aspx" />
+    <Content Include="news\center.aspx" />
+    <Content Include="news\detail.aspx" />
+    <Content Include="news\list.aspx" />
+    <Content Include="news\olddetail.aspx" />
+    <Content Include="OrderCreateSuccess.aspx" />
+    <Content Include="OrderDetail.aspx" />
+    <Content Include="OrderList.aspx" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_1.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_10.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_11.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_12.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_13.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_14.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_15.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_16.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_17.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_18.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_19.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_2.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_20.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_21.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_22.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_23.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_24.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_25.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_3.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_4.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_5.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_6.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_7.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_8.jpg" />
+    <Content Include="other\mobile\valentine2015\img\mbqrj_9.jpg" />
+    <Content Include="other\mobile\valentine2015\img\oldqrj_1.jpg" />
+    <Content Include="other\mobile\valentine2015\img\oldqrj_2.jpg" />
+    <Content Include="other\mobile\valentine2015\img\oldqrj_3.jpg" />
+    <Content Include="other\mobile\valentine2015\img\oldqrj_4.jpg" />
+    <Content Include="other\mobile\valentine2015\img\oldqrj_5.jpg" />
+    <Content Include="other\mobile\valentine2015\img\oldqrj_6.jpg" />
+    <Content Include="other\mobile\valentine2015\img\oldqrj_7.jpg" />
+    <Content Include="other\mobile\valentine2015\index.aspx" />
+    <Content Include="other\mobile\valentine2015\oldmember.aspx" />
+    <Content Include="other\weixin\valentine2015\card.aspx" />
+    <Content Include="other\weixin\valentine2015\css\main.css" />
+    <Content Include="other\weixin\valentine2015\img\arrow.png" />
+    <Content Include="other\weixin\valentine2015\img\audio.png" />
+    <Content Include="other\weixin\valentine2015\img\card_fx.png" />
+    <Content Include="other\weixin\valentine2015\img\close.png" />
+    <Content Include="other\weixin\valentine2015\img\hk\h1.jpg" />
+    <Content Include="other\weixin\valentine2015\img\hk\hbutton.jpg" />
+    <Content Include="other\weixin\valentine2015\img\hk\input_bg.jpg" />
+    <Content Include="other\weixin\valentine2015\img\hk\input_bg.png" />
+    <Content Include="other\weixin\valentine2015\img\hk\input_bg1.png" />
+    <Content Include="other\weixin\valentine2015\img\hk\lbutton.jpg" />
+    <Content Include="other\weixin\valentine2015\img\icon.png" />
+    <Content Include="other\weixin\valentine2015\img\index\close.jpg" />
+    <Content Include="other\weixin\valentine2015\img\index\firstbk.jpg" />
+    <Content Include="other\weixin\valentine2015\img\index\h1-word.png" />
+    <Content Include="other\weixin\valentine2015\img\index\logo.png" />
+    <Content Include="other\weixin\valentine2015\img\index\play.png" />
+    <Content Include="other\weixin\valentine2015\img\jhp\h1.jpg" />
+    <Content Include="other\weixin\valentine2015\img\jhp\h1_ring.png" />
+    <Content Include="other\weixin\valentine2015\img\jhp\h1_word.png" />
+    <Content Include="other\weixin\valentine2015\img\jhp\h2.jpg" />
+    <Content Include="other\weixin\valentine2015\img\jhp\h2_ring.png" />
+    <Content Include="other\weixin\valentine2015\img\jhp\h2_word.png" />
+    <Content Include="other\weixin\valentine2015\img\jhp\j1.jpg" />
+    <Content Include="other\weixin\valentine2015\img\jhp\j1_word.png" />
+    <Content Include="other\weixin\valentine2015\img\jhp\jbutton.jpg" />
+    <Content Include="other\weixin\valentine2015\img\media\ILoveYouSoMuch.mp3" />
+    <Content Include="other\weixin\valentine2015\img\media\sc_DR_9.mp4" />
+    <Content Include="other\weixin\valentine2015\img\music.png" />
+    <Content Include="other\weixin\valentine2015\img\qhp\f1.jpg" />
+    <Content Include="other\weixin\valentine2015\img\qhp\f1_ring.png" />
+    <Content Include="other\weixin\valentine2015\img\qhp\f1_word.png" />
+    <Content Include="other\weixin\valentine2015\img\qhp\f2.jpg" />
+    <Content Include="other\weixin\valentine2015\img\qhp\f2_ring.png" />
+    <Content Include="other\weixin\valentine2015\img\qhp\f2_word.png" />
+    <Content Include="other\weixin\valentine2015\img\qhp\f3.jpg" />
+    <Content Include="other\weixin\valentine2015\img\qhp\f3_ring.png" />
+    <Content Include="other\weixin\valentine2015\img\qhp\f3_word.png" />
+    <Content Include="other\weixin\valentine2015\img\qhp\f4.jpg" />
+    <Content Include="other\weixin\valentine2015\img\qhp\f4_ring.png" />
+    <Content Include="other\weixin\valentine2015\img\qhp\f4_word.png" />
+    <Content Include="other\weixin\valentine2015\img\qhp\f5.jpg" />
+    <Content Include="other\weixin\valentine2015\img\qhp\f5_ring.png" />
+    <Content Include="other\weixin\valentine2015\img\qhp\f5_word.png" />
+    <Content Include="other\weixin\valentine2015\img\qhp\f6.jpg" />
+    <Content Include="other\weixin\valentine2015\img\qhp\f6_ring.png" />
+    <Content Include="other\weixin\valentine2015\img\qhp\f6_word.png" />
+    <Content Include="other\weixin\valentine2015\img\qhp\s1.jpg" />
+    <Content Include="other\weixin\valentine2015\img\qhp\s1_word.png" />
+    <Content Include="other\weixin\valentine2015\img\qhp\sbutton.jpg" />
+    <Content Include="other\weixin\valentine2015\img\weixinshare.jpg" />
+    <Content Include="other\weixin\valentine2015\img\wuwangxinan.mp3" />
+    <Content Include="other\weixin\valentine2015\img\xbp\b1.jpg" />
+    <Content Include="other\weixin\valentine2015\img\xbp\b1_ring.png" />
+    <Content Include="other\weixin\valentine2015\img\xbp\b1_word.png" />
+    <Content Include="other\weixin\valentine2015\img\xbp\b2.jpg" />
+    <Content Include="other\weixin\valentine2015\img\xbp\b2_ring.png" />
+    <Content Include="other\weixin\valentine2015\img\xbp\b2_word.png" />
+    <Content Include="other\weixin\valentine2015\img\xbp\b3.jpg" />
+    <Content Include="other\weixin\valentine2015\img\xbp\b3_ring.png" />
+    <Content Include="other\weixin\valentine2015\img\xbp\b3_word.png" />
+    <Content Include="other\weixin\valentine2015\img\xbp\b4.jpg" />
+    <Content Include="other\weixin\valentine2015\img\xbp\b4_ring.png" />
+    <Content Include="other\weixin\valentine2015\img\xbp\b4_word.png" />
+    <Content Include="other\weixin\valentine2015\img\xbp\b5.jpg" />
+    <Content Include="other\weixin\valentine2015\img\xbp\b5_ring.png" />
+    <Content Include="other\weixin\valentine2015\img\xbp\b5_word.png" />
+    <Content Include="other\weixin\valentine2015\img\xbp\x1.jpg" />
+    <Content Include="other\weixin\valentine2015\img\xbp\x1_word.png" />
+    <Content Include="other\weixin\valentine2015\img\xbp\xbutton.jpg" />
+    <Content Include="other\weixin\valentine2015\index.aspx" />
+    <Content Include="other\weixin\valentine2015\js\jquery-1.9.1.min.js" />
+    <Content Include="other\weixin\valentine2015\js\jquery-2.1.0.js" />
+    <Content Include="other\weixin\valentine2015\js\main.js" />
+    <Content Include="other\weixin\valentine2015\js\theviemport.js" />
+    <Content Include="other\weixin\valentine2015\media\ILoveYouTooMuch.mp3" />
+    <Content Include="other\weixin\valentine2015\media\sc_DR_9.mp4" />
+    <Content Include="paylist.aspx" />
+    <Content Include="pay\alipay_pay\images\ABC_OUT.gif" />
+    <Content Include="pay\alipay_pay\images\alipay.gif" />
+    <Content Include="pay\alipay_pay\images\alipay_1.gif" />
+    <Content Include="pay\alipay_pay\images\alipay_bwrx.gif" />
+    <Content Include="pay\alipay_pay\images\BJRCB_OUT.gif" />
+    <Content Include="pay\alipay_pay\images\BOC_OUT.gif" />
+    <Content Include="pay\alipay_pay\images\button_sure.gif" />
+    <Content Include="pay\alipay_pay\images\CCB_OUT.gif" />
+    <Content Include="pay\alipay_pay\images\CEB_OUT.gif" />
+    <Content Include="pay\alipay_pay\images\CIB_OUT.gif" />
+    <Content Include="pay\alipay_pay\images\CITIC_OUT.gif" />
+    <Content Include="pay\alipay_pay\images\CMBC_OUT.gif" />
+    <Content Include="pay\alipay_pay\images\CMB_OUT.gif" />
+    <Content Include="pay\alipay_pay\images\COMM_OUT.gif" />
+    <Content Include="pay\alipay_pay\images\ENV_ABC_OUT.gif" />
+    <Content Include="pay\alipay_pay\images\ENV_CCB_OUT.gif" />
+    <Content Include="pay\alipay_pay\images\ENV_ICBC_OUT.gif" />
+    <Content Include="pay\alipay_pay\images\ENV_SPDB_OUT.gif" />
+    <Content Include="pay\alipay_pay\images\FDB_OUT.gif" />
+    <Content Include="pay\alipay_pay\images\GDB_OUT.gif" />
+    <Content Include="pay\alipay_pay\images\HZCB_OUT.gif" />
+    <Content Include="pay\alipay_pay\images\ICBC_OUT.gif" />
+    <Content Include="pay\alipay_pay\images\icon_visa_s.gif" />
+    <Content Include="pay\alipay_pay\images\layout.css" />
+    <Content Include="pay\alipay_pay\images\logo.gif" />
+    <Content Include="pay\alipay_pay\images\logo_vbvv.gif" />
+    <Content Include="pay\alipay_pay\images\NBBANK_OUT.gif" />
+    <Content Include="pay\alipay_pay\images\SDB_OUT.gif" />
+    <Content Include="pay\alipay_pay\images\SHBANK_OUT.gif" />
+    <Content Include="pay\alipay_pay\images\SPABANK_OUT.gif" />
+    <Content Include="pay\alipay_pay\images\SPDB_OUT.gif" />
+    <Content Include="pay\alipay_pay\notify_url.aspx" />
+    <Content Include="pay\alipay_pay\return_url.aspx" />
+    <Content Include="pay\mobile_pay\call_back_url.aspx" />
+    <Content Include="pay\mobile_pay\notify_url.aspx" />
+    <Content Include="pay\pay.aspx" />
+    <Content Include="pay\pay_default.aspx" />
+    <Content Include="pay\pay_tenpay.aspx" />
+    <Content Include="pay\tenpay_pay\notify_url.aspx" />
+    <Content Include="phonics_details.aspx" />
+    <Content Include="Propose.aspx" />
+    <Content Include="proposedetail.aspx" />
+    <Content Include="proposelist.aspx" />
+    <Content Include="Protocol.aspx" />
+    <Content Include="pzgy.aspx" />
+    <Content Include="Scripts\DateFormat.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="manr_list.aspx" />
+    <Content Include="necklace_list.aspx" />
+    <Content Include="phonics_list.aspx" />
+    <Content Include="Scripts\all_same.js" />
+    <Content Include="Scripts\banner.js" />
+    <Content Include="Scripts\buyit.js" />
+    <Content Include="Scripts\iscroll.js" />
+    <Content Include="Scripts\jquery-1.7.2.min.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.tmpl.js" />
+    <Content Include="Scripts\jquery.tmpl.min.js" />
+    <Content Include="Scripts\jsrender.js" />
+    <Content Include="Scripts\jsrender.min.js" />
+    <Content Include="Scripts\json-array-of-city.js" />
+    <Content Include="Scripts\json-array-of-district.js" />
+    <Content Include="Scripts\json-array-of-province.js" />
+    <Content Include="Scripts\Scripts.js" />
+    <Content Include="Scripts\to_hd.js" />
+    <Content Include="Scripts\Verification.js" />
+    <Content Include="Scripts\Wrong.js" />
+    <Content Include="Cart.aspx" />
+    <Content Include="shop.aspx" />
+    <Content Include="Styles\member.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\wz.css" />
+    <Content Include="SubmitOrder.aspx" />
+    <Content Include="test\test.html" />
+    <Content Include="test\test_alipay.aspx" />
+    <Content Include="test\test_tenpay.aspx" />
+    <Content Include="TrueLove.aspx" />
+    <Content Include="underGoods.aspx" />
+    <Content Include="us\us_footer.ascx" />
+    <Content Include="us\us_header.ascx" />
+    <Content Include="us\us_OrderList.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="yzsb.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\dr_QQCallBackURL.aspx.cs">
+      <DependentUpon>dr_QQCallBackURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\dr_QQCallBackURL.aspx.designer.cs">
+      <DependentUpon>dr_QQCallBackURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ForgetPwd.aspx.cs">
+      <DependentUpon>ForgetPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ForgetPwd.aspx.designer.cs">
+      <DependentUpon>ForgetPwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\LoginThirdParty.aspx.cs">
+      <DependentUpon>LoginThirdParty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\LoginThirdParty.aspx.designer.cs">
+      <DependentUpon>LoginThirdParty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\LoginToQQ.aspx.cs">
+      <DependentUpon>LoginToQQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\LoginToQQ.aspx.designer.cs">
+      <DependentUpon>LoginToQQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\MyInfo.aspx.cs">
+      <DependentUpon>MyInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\MyInfo.aspx.designer.cs">
+      <DependentUpon>MyInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\SinaCallBackURL.aspx.cs">
+      <DependentUpon>SinaCallBackURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\SinaCallBackURL.aspx.designer.cs">
+      <DependentUpon>SinaCallBackURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddAddress.aspx.cs">
+      <DependentUpon>AddAddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddAddress.aspx.designer.cs">
+      <DependentUpon>AddAddress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Address.aspx.cs">
+      <DependentUpon>Address.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Address.aspx.designer.cs">
+      <DependentUpon>Address.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AfterService.aspx.cs">
+      <DependentUpon>AfterService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AfterService.aspx.designer.cs">
+      <DependentUpon>AfterService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AfterServiceView.aspx.cs">
+      <DependentUpon>AfterServiceView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AfterServiceView.aspx.designer.cs">
+      <DependentUpon>AfterServiceView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="All_List.aspx.cs">
+      <DependentUpon>All_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="All_List.aspx.designer.cs">
+      <DependentUpon>All_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="API\AddCartAddressAPI.ashx.cs">
+      <DependentUpon>AddCartAddressAPI.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\AddressInfo.ashx.cs">
+      <DependentUpon>AddressInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\AfterServiceCMD.ashx.cs">
+      <DependentUpon>AfterServiceCMD.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\AddCartAPI.ashx.cs">
+      <DependentUpon>AddCartAPI.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\buycheck.ashx.cs">
+      <DependentUpon>buycheck.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\CheckCart.ashx.cs">
+      <DependentUpon>CheckCart.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\CheckCode.ashx.cs">
+      <DependentUpon>CheckCode.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\ClearCart.ashx.cs">
+      <DependentUpon>ClearCart.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\Comment.ashx.cs">
+      <DependentUpon>Comment.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\Comment.aspx.cs">
+      <DependentUpon>Comment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="API\Comment.aspx.designer.cs">
+      <DependentUpon>Comment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="API\darrycheck.ashx.cs">
+      <DependentUpon>darrycheck.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\DarryHomeCMD.ashx.cs">
+      <DependentUpon>DarryHomeCMD.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\DiamondAPI.aspx.cs">
+      <DependentUpon>DiamondAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="API\DiamondAPI.aspx.designer.cs">
+      <DependentUpon>DiamondAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="API\favorites.ashx.cs">
+      <DependentUpon>favorites.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\Feedback.ashx.cs">
+      <DependentUpon>Feedback.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\HandSizePrice.ashx.cs">
+      <DependentUpon>HandSizePrice.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\MemberAction.ashx.cs">
+      <DependentUpon>MemberAction.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\MyInfoCMD.ashx.cs">
+      <DependentUpon>MyInfoCMD.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\DeleteAddressAPI.ashx.cs">
+      <DependentUpon>DeleteAddressAPI.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\GetAllAddressAPI.ashx.cs">
+      <DependentUpon>GetAllAddressAPI.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\LoginAPI.ashx.cs">
+      <DependentUpon>LoginAPI.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\NewsList.aspx.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="API\NewsList.aspx.designer.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="API\OrderCommand.ashx.cs">
+      <DependentUpon>OrderCommand.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\CreateUserAPI.ashx.cs">
+      <DependentUpon>CreateUserAPI.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\ProductList.ashx.cs">
+      <DependentUpon>ProductList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\ProductList2.ashx.cs">
+      <DependentUpon>ProductList2.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\SendVerificationCode.ashx.cs">
+      <DependentUpon>SendVerificationCode.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\truelove.ashx.cs">
+      <DependentUpon>truelove.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\UpdateAddressStatusAPI.ashx.cs">
+      <DependentUpon>UpdateAddressStatusAPI.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="API\VisitorMsgEmail.ashx.cs">
+      <DependentUpon>VisitorMsgEmail.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="BankPayList.aspx.cs">
+      <DependentUpon>BankPayList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BankPayList.aspx.designer.cs">
+      <DependentUpon>BankPayList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bracelet_list.aspx.cs">
+      <DependentUpon>bracelet_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bracelet_list.aspx.designer.cs">
+      <DependentUpon>bracelet_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="brand.aspx.cs">
+      <DependentUpon>brand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="brand.aspx.designer.cs">
+      <DependentUpon>brand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CartOrderDetail.aspx.cs">
+      <DependentUpon>CartOrderDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CartOrderDetail.aspx.designer.cs">
+      <DependentUpon>CartOrderDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="chinapay\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="chinapay\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="chinapay\notify.ashx.cs">
+      <DependentUpon>notify.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="chinapay\qt.aspx.cs">
+      <DependentUpon>qt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="chinapay\qt.aspx.designer.cs">
+      <DependentUpon>qt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment\Comment.aspx.cs">
+      <DependentUpon>Comment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment\Comment.aspx.designer.cs">
+      <DependentUpon>Comment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment\EmptyComment.aspx.cs">
+      <DependentUpon>EmptyComment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment\EmptyComment.aspx.designer.cs">
+      <DependentUpon>EmptyComment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment\MyComment.aspx.cs">
+      <DependentUpon>MyComment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment\MyComment.aspx.designer.cs">
+      <DependentUpon>MyComment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ctyz.aspx.cs">
+      <DependentUpon>ctyz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctyz.aspx.designer.cs">
+      <DependentUpon>ctyz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Culture_List.aspx.cs">
+      <DependentUpon>Culture_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Culture_List.aspx.designer.cs">
+      <DependentUpon>Culture_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerService\Center.aspx.cs">
+      <DependentUpon>Center.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerService\Center.aspx.designer.cs">
+      <DependentUpon>Center.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerService\Detail.aspx.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerService\Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DarryFail.aspx.cs">
+      <DependentUpon>DarryFail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DarryFail.aspx.designer.cs">
+      <DependentUpon>DarryFail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DarrySuccess.aspx.cs">
+      <DependentUpon>DarrySuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DarrySuccess.aspx.designer.cs">
+      <DependentUpon>DarrySuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="diamondring_list.aspx.cs">
+      <DependentUpon>diamondring_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="diamondring_list.aspx.designer.cs">
+      <DependentUpon>diamondring_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="drcg.aspx.cs">
+      <DependentUpon>drcg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="drcg.aspx.designer.cs">
+      <DependentUpon>drcg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dring_detail.aspx.cs">
+      <DependentUpon>dring_detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dring_detail.aspx.designer.cs">
+      <DependentUpon>dring_detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dryz.aspx.cs">
+      <DependentUpon>dryz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dryz.aspx.designer.cs">
+      <DependentUpon>dryz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="earrings_list.aspx.cs">
+      <DependentUpon>earrings_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="earrings_list.aspx.designer.cs">
+      <DependentUpon>earrings_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmptyAddress.aspx.cs">
+      <DependentUpon>EmptyAddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmptyAddress.aspx.designer.cs">
+      <DependentUpon>EmptyAddress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmptyAfterService.aspx.cs">
+      <DependentUpon>EmptyAfterService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmptyAfterService.aspx.designer.cs">
+      <DependentUpon>EmptyAfterService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmptyCart.aspx.cs">
+      <DependentUpon>EmptyCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmptyCart.aspx.designer.cs">
+      <DependentUpon>EmptyCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmptyCollect.aspx.cs">
+      <DependentUpon>EmptyCollect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmptyCollect.aspx.designer.cs">
+      <DependentUpon>EmptyCollect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmptyOrder.aspx.cs">
+      <DependentUpon>EmptyOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmptyOrder.aspx.designer.cs">
+      <DependentUpon>EmptyOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fansshow.aspx.cs">
+      <DependentUpon>fansshow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fansshow.aspx.designer.cs">
+      <DependentUpon>fansshow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="help.aspx.cs">
+      <DependentUpon>help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="help.aspx.designer.cs">
+      <DependentUpon>help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="helpCenter\HandsizeHelp.aspx.cs">
+      <DependentUpon>HandsizeHelp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="helpCenter\HandsizeHelp.aspx.designer.cs">
+      <DependentUpon>HandsizeHelp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index_list.aspx.cs">
+      <DependentUpon>index_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index_list.aspx.designer.cs">
+      <DependentUpon>index_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IsBuyDarry.aspx.cs">
+      <DependentUpon>IsBuyDarry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IsBuyDarry.aspx.designer.cs">
+      <DependentUpon>IsBuyDarry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jewellery_detail.aspx.cs">
+      <DependentUpon>jewellery_detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jewellery_detail.aspx.designer.cs">
+      <DependentUpon>jewellery_detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jewellery_list.aspx.cs">
+      <DependentUpon>jewellery_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jewellery_list.aspx.designer.cs">
+      <DependentUpon>jewellery_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lovewall_Article.aspx.cs">
+      <DependentUpon>Lovewall_Article.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lovewall_Article.aspx.designer.cs">
+      <DependentUpon>Lovewall_Article.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoveWall_List.aspx.cs">
+      <DependentUpon>LoveWall_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoveWall_List.aspx.designer.cs">
+      <DependentUpon>LoveWall_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mactdetail.aspx.cs">
+      <DependentUpon>mactdetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mactdetail.aspx.designer.cs">
+      <DependentUpon>mactdetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mactivity.aspx.cs">
+      <DependentUpon>mactivity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mactivity.aspx.designer.cs">
+      <DependentUpon>mactivity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manring_detail.aspx.cs">
+      <DependentUpon>manring_detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manring_detail.aspx.designer.cs">
+      <DependentUpon>manring_detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manr_list.aspx.cs">
+      <DependentUpon>manr_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manr_list.aspx.designer.cs">
+      <DependentUpon>manr_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\mSite.Master.cs">
+      <DependentUpon>mSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\mSite.Master.designer.cs">
+      <DependentUpon>mSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="master\nSite.Master.cs">
+      <DependentUpon>nSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\nSite.Master.designer.cs">
+      <DependentUpon>nSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="master\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MemberCenter.aspx.cs">
+      <DependentUpon>MemberCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberCenter.aspx.designer.cs">
+      <DependentUpon>MemberCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mindex.aspx.cs">
+      <DependentUpon>mindex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mindex.aspx.designer.cs">
+      <DependentUpon>mindex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mstartdetail.aspx.cs">
+      <DependentUpon>mstartdetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mstartdetail.aspx.designer.cs">
+      <DependentUpon>mstartdetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mstartlist.aspx.cs">
+      <DependentUpon>mstartlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mstartlist.aspx.designer.cs">
+      <DependentUpon>mstartlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="muc\BuyControl.ascx.cs">
+      <DependentUpon>BuyControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muc\BuyControl.ascx.designer.cs">
+      <DependentUpon>BuyControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="muc\CommodityInfo.ascx.cs">
+      <DependentUpon>CommodityInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muc\CommodityInfo.ascx.designer.cs">
+      <DependentUpon>CommodityInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="muc\DiamondResult.ascx.cs">
+      <DependentUpon>DiamondResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muc\DiamondResult.ascx.designer.cs">
+      <DependentUpon>DiamondResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="muc\DiamondSearch.ascx.cs">
+      <DependentUpon>DiamondSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muc\DiamondSearch.ascx.designer.cs">
+      <DependentUpon>DiamondSearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="muc\footer.ascx.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muc\footer.ascx.designer.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="muc\Handsize.ascx.cs">
+      <DependentUpon>Handsize.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muc\Handsize.ascx.designer.cs">
+      <DependentUpon>Handsize.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="muc\header.ascx.cs">
+      <DependentUpon>header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muc\header.ascx.designer.cs">
+      <DependentUpon>header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="muc\infoview.ascx.cs">
+      <DependentUpon>infoview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muc\infoview.ascx.designer.cs">
+      <DependentUpon>infoview.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="muc\Material.ascx.cs">
+      <DependentUpon>Material.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muc\Material.ascx.designer.cs">
+      <DependentUpon>Material.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="muc\newslist.ascx.cs">
+      <DependentUpon>newslist.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muc\newslist.ascx.designer.cs">
+      <DependentUpon>newslist.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="muc\Paging.ascx.cs">
+      <DependentUpon>Paging.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muc\Paging.ascx.designer.cs">
+      <DependentUpon>Paging.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="muc\PhonicsMaterial.ascx.cs">
+      <DependentUpon>PhonicsMaterial.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muc\PhonicsMaterial.ascx.designer.cs">
+      <DependentUpon>PhonicsMaterial.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="muc\ProductImgView.ascx.cs">
+      <DependentUpon>ProductImgView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muc\ProductImgView.ascx.designer.cs">
+      <DependentUpon>ProductImgView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="muc\RelatedInfo.ascx.cs">
+      <DependentUpon>RelatedInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muc\RelatedInfo.ascx.designer.cs">
+      <DependentUpon>RelatedInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="muc\website.ascx.cs">
+      <DependentUpon>website.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muc\website.ascx.designer.cs">
+      <DependentUpon>website.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="muc\workflow.ascx.cs">
+      <DependentUpon>workflow.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muc\workflow.ascx.designer.cs">
+      <DependentUpon>workflow.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyAddress.aspx.cs">
+      <DependentUpon>MyAddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyAddress.aspx.designer.cs">
+      <DependentUpon>MyAddress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyAddressChoose.aspx.cs">
+      <DependentUpon>MyAddressChoose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyAddressChoose.aspx.designer.cs">
+      <DependentUpon>MyAddressChoose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyAfterService.aspx.cs">
+      <DependentUpon>MyAfterService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyAfterService.aspx.designer.cs">
+      <DependentUpon>MyAfterService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyCollect.aspx.cs">
+      <DependentUpon>MyCollect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyCollect.aspx.designer.cs">
+      <DependentUpon>MyCollect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInfo.aspx.cs">
+      <DependentUpon>MyInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInfo.aspx.designer.cs">
+      <DependentUpon>MyInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="necklace_list.aspx.cs">
+      <DependentUpon>necklace_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="necklace_list.aspx.designer.cs">
+      <DependentUpon>necklace_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="news\center.aspx.cs">
+      <DependentUpon>center.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="news\center.aspx.designer.cs">
+      <DependentUpon>center.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="news\detail.aspx.cs">
+      <DependentUpon>detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="news\detail.aspx.designer.cs">
+      <DependentUpon>detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="news\list.aspx.cs">
+      <DependentUpon>list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="news\list.aspx.designer.cs">
+      <DependentUpon>list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="news\olddetail.aspx.cs">
+      <DependentUpon>olddetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="news\olddetail.aspx.designer.cs">
+      <DependentUpon>olddetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderCreateSuccess.aspx.cs">
+      <DependentUpon>OrderCreateSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderCreateSuccess.aspx.designer.cs">
+      <DependentUpon>OrderCreateSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDetail.aspx.cs">
+      <DependentUpon>OrderDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderDetail.aspx.designer.cs">
+      <DependentUpon>OrderDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderList.aspx.cs">
+      <DependentUpon>OrderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderList.aspx.designer.cs">
+      <DependentUpon>OrderList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="other\mobile\valentine2015\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="other\mobile\valentine2015\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="other\mobile\valentine2015\oldmember.aspx.cs">
+      <DependentUpon>oldmember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="other\mobile\valentine2015\oldmember.aspx.designer.cs">
+      <DependentUpon>oldmember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="other\weixin\valentine2015\card.aspx.cs">
+      <DependentUpon>card.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="other\weixin\valentine2015\card.aspx.designer.cs">
+      <DependentUpon>card.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="other\weixin\valentine2015\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="other\weixin\valentine2015\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paylist.aspx.cs">
+      <DependentUpon>paylist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paylist.aspx.designer.cs">
+      <DependentUpon>paylist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pay\alipay.cs" />
+    <Compile Include="pay\alipay_pay\cs\alipay_config.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pay\alipay_pay\cs\alipay_function.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pay\alipay_pay\cs\alipay_notify.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pay\alipay_pay\cs\alipay_service.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pay\alipay_pay\notify_url.aspx.cs">
+      <DependentUpon>notify_url.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay\alipay_pay\return_url.aspx.cs">
+      <DependentUpon>return_url.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay\alipay_pay\return_url.aspx.designer.cs">
+      <DependentUpon>return_url.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pay\mobile_pay\call_back_url.aspx.cs">
+      <DependentUpon>call_back_url.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay\mobile_pay\call_back_url.aspx.designer.cs">
+      <DependentUpon>call_back_url.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pay\mobile_pay\cs_pay\AlipayConfig.cs" />
+    <Compile Include="pay\mobile_pay\cs_pay\AlipayCore.cs" />
+    <Compile Include="pay\mobile_pay\cs_pay\AlipayNotify.cs" />
+    <Compile Include="pay\mobile_pay\cs_pay\AlipaySubmit.cs" />
+    <Compile Include="pay\mobile_pay\cs_pay\MD5.cs" />
+    <Compile Include="pay\mobile_pay\cs_pay\RSA.cs" />
+    <Compile Include="pay\mobile_pay\notify_url.aspx.cs">
+      <DependentUpon>notify_url.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay\mobile_pay\notify_url.aspx.designer.cs">
+      <DependentUpon>notify_url.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pay\pay.aspx.cs">
+      <DependentUpon>pay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay\pay.aspx.designer.cs">
+      <DependentUpon>pay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pay\pay_default.aspx.cs">
+      <DependentUpon>pay_default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay\pay_default.aspx.designer.cs">
+      <DependentUpon>pay_default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pay\pay_tenpay.aspx.cs">
+      <DependentUpon>pay_tenpay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay\pay_tenpay.aspx.designer.cs">
+      <DependentUpon>pay_tenpay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pay\tenpay_pay\notify_url.aspx.cs">
+      <DependentUpon>notify_url.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay\tenpay_pay\notify_url.aspx.designer.cs">
+      <DependentUpon>notify_url.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="phonics_details.aspx.cs">
+      <DependentUpon>phonics_details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="phonics_details.aspx.designer.cs">
+      <DependentUpon>phonics_details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="phonics_list.aspx.cs">
+      <DependentUpon>phonics_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="phonics_list.aspx.designer.cs">
+      <DependentUpon>phonics_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Propose.aspx.cs">
+      <DependentUpon>Propose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Propose.aspx.designer.cs">
+      <DependentUpon>Propose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="proposedetail.aspx.cs">
+      <DependentUpon>proposedetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="proposedetail.aspx.designer.cs">
+      <DependentUpon>proposedetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="proposelist.aspx.cs">
+      <DependentUpon>proposelist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="proposelist.aspx.designer.cs">
+      <DependentUpon>proposelist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Protocol.aspx.cs">
+      <DependentUpon>Protocol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Protocol.aspx.designer.cs">
+      <DependentUpon>Protocol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pzgy.aspx.cs">
+      <DependentUpon>pzgy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pzgy.aspx.designer.cs">
+      <DependentUpon>pzgy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shop.aspx.cs">
+      <DependentUpon>shop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shop.aspx.designer.cs">
+      <DependentUpon>shop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SubmitOrder.aspx.cs">
+      <DependentUpon>SubmitOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SubmitOrder.aspx.designer.cs">
+      <DependentUpon>SubmitOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test\Helper.cs" />
+    <Compile Include="test\test_alipay.aspx.cs">
+      <DependentUpon>test_alipay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test\test_alipay.aspx.designer.cs">
+      <DependentUpon>test_alipay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test\test_tenpay.aspx.cs">
+      <DependentUpon>test_tenpay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test\test_tenpay.aspx.designer.cs">
+      <DependentUpon>test_tenpay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrueLove.aspx.cs">
+      <DependentUpon>TrueLove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrueLove.aspx.designer.cs">
+      <DependentUpon>TrueLove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="underGoods.aspx.cs">
+      <DependentUpon>underGoods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="underGoods.aspx.designer.cs">
+      <DependentUpon>underGoods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="us\us_footer.ascx.cs">
+      <DependentUpon>us_footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="us\us_footer.ascx.designer.cs">
+      <DependentUpon>us_footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="us\us_header.ascx.cs">
+      <DependentUpon>us_header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="us\us_header.ascx.designer.cs">
+      <DependentUpon>us_header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="us\us_OrderList.ascx.cs">
+      <DependentUpon>us_OrderList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="us\us_OrderList.ascx.designer.cs">
+      <DependentUpon>us_OrderList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="yzsb.aspx.cs">
+      <DependentUpon>yzsb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yzsb.aspx.designer.cs">
+      <DependentUpon>yzsb.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="pay\alipay_pay\log\" />
+    <Folder Include="pay\mobile_pay\images\" />
+    <Folder Include="pay\mobile_pay\log\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="master\Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="API\CheckCode.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\alipay-sdk-NET20170615110549\AopSdk.csproj">
+      <Project>{9c11cae5-5188-4e71-825b-68fc3135728a}</Project>
+      <Name>AopSdk</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DRM.BLL\DRM.BLL.csproj">
+      <Project>{152C917A-B86B-4850-B5DD-CD86F8CC8DBA}</Project>
+      <Name>DRM.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DRM.Common\DRM.Common.csproj">
+      <Project>{486ACCFB-7605-432B-9E06-497B6BEB773F}</Project>
+      <Name>DRM.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DRM.Entity\DRM.Entity.csproj">
+      <Project>{E6F2B7FE-2BA2-424A-9A34-2022250BB0D0}</Project>
+      <Name>DRM.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SKIT.FlurlHttpClient.Wechat.TenpayV3\SKIT.FlurlHttpClient.Wechat.TenpayV3.csproj">
+      <Project>{0ec840d3-6e8b-4372-aa02-677e93d0e919}</Project>
+      <Name>SKIT.FlurlHttpClient.Wechat.TenpayV3</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="API\OrderCommand.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="API\CreateUserAPI.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="API\GetAllAddressAPI.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="API\LoginAPI.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="API\DeleteAddressAPI.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="API\UpdateAddressStatusAPI.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="API\MyInfoCMD.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="API\AfterServiceCMD.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="API\AddCartAPI.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="API\DarryHomeCMD.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="API\ProductList.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="master\mSite.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="API\HandSizePrice.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="API\buycheck.ashx" />
+    <Content Include="API\ClearCart.ashx" />
+    <Content Include="API\CheckCart.ashx" />
+    <Content Include="API\darrycheck.ashx" />
+    <Content Include="API\SendVerificationCode.ashx" />
+    <Content Include="API\MemberAction.ashx" />
+    <Content Include="API\AddressInfo.ashx" />
+    <Content Include="API\Feedback.ashx" />
+    <Content Include="API\favorites.ashx" />
+    <Content Include="API\Comment.ashx" />
+    <Content Include="API\AddCartAddressAPI.ashx" />
+    <Content Include="chinapay\notify.ashx" />
+    <Content Include="API\truelove.ashx" />
+    <Content Include="API\VisitorMsgEmail.ashx" />
+    <Content Include="API\ProductList2.ashx" />
+    <None Include="fonts\iconfont.eot" />
+    <None Include="fonts\iconfont.ttf" />
+    <None Include="fonts\iconfont.woff" />
+    <Content Include="master\nSite.Master" />
+    <Content Include="Web.sitemap" />
+    <None Include="KEY\898440350940269.pfx" />
+    <None Include="KEY\898510148990028.cer" />
+    <Content Include="libman.json" />
+    <None Include="other\weixin\valentine2015\img\media\sc_DR_9.webm" />
+    <None Include="other\weixin\valentine2015\media\sc_DR_9.webm" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>10797</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/drmobile</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

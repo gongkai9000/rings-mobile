@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="nSite.master.cs" Inherits="drmobile.master.nSite" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Src="~/muc/footer.ascx" TagName="ucfooter" TagPrefix="uc1" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <meta content="telephone=no" name="format-detection">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <!--#include file="/BataStyle/mb_same.inc"-->
+    <!--#include file="/BataStyle/iconfont.inc"-->
+    <script src="/mjs/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/mjs/zcdl.js" ></script>
+    <script type="text/javascript" src="/mjs/Wrong.js" ></script>
+    <script type="text/javascript" src="/mjs/Success.js" ></script>    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!--大的宽度-->
+        <div class="all_cort">
+            <!--阴影背景-->
+		    <div class="bk_gray"></div>
+            <!--头部-->
+            <header>
+                <a href="javascript:history.go(-1)" class="iconfont for_left fl">&#xe603;</a>
+                <span id="hea" runat="server"></span>
+                <a href="/" class="iconfont for_index fr">&#xe61a;</a>
+                <a href="/MemberCenter.aspx" rel="nofollow" class="iconfont member fr">&#xe600;</a>
+            </header>
+            <%
+                if(IsBGImg)
+            {%>
+            <div class="dryz_bk">
+                <img src="<%=BGImgUrl %>" />
+            <%}%>
+                <div class="<%=FirstPanelClass %><%=PanelClass %>">
+                     <%
+                        if(!IsBGImg)
+                    {%>
+                    <div class="min_height">
+                    <%}%>
+                        <!--头部end-->
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                        <div class="success" style="display:none"></div>
+                        <div class="wrong" style="display:none">
+				            <span></span>
+				            <i class="iconfont">&#xe608;</i>
+			            </div>
+                     <%
+                        if(!IsBGImg)
+                    {%>
+                    </div>
+                    <%}%>
+                    <uc1:ucfooter ID="ucfooter1" runat="server" />
+                </div>
+            <%
+                if(IsBGImg)
+            {%>
+            </div>
+            <%}%>
+        </div>
+    <!--大的宽度end-->
+    <asp:ContentPlaceHolder ID="PageEndJs" runat="server">
+    </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

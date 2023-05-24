@@ -1,0 +1,10 @@
+D:\c#\drmobile\DRM.DAL\bin\Release\DRM.DAL.dll
+D:\c#\drmobile\DRM.DAL\bin\Release\DRM.DAL.pdb
+D:\c#\drmobile\DRM.DAL\bin\Release\DRM.Entity.dll
+D:\c#\drmobile\DRM.DAL\bin\Release\DRM.Entity.pdb
+D:\c#\drmobile\DRM.DAL\bin\Release\DRM.Entity.dll.config
+D:\c#\drmobile\DRM.DAL\obj\Release\DRM.DAL.csproj.AssemblyReference.cache
+D:\c#\drmobile\DRM.DAL\obj\Release\DRM.DAL.csproj.CoreCompileInputs.cache
+D:\c#\drmobile\DRM.DAL\obj\Release\DRM.DAL.csproj.CopyComplete
+D:\c#\drmobile\DRM.DAL\obj\Release\DRM.DAL.dll
+D:\c#\drmobile\DRM.DAL\obj\Release\DRM.DAL.pdb

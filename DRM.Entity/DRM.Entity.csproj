@@ -1,0 +1,598 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E6F2B7FE-2BA2-424A-9A34-2022250BB0D0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DRM.Entity</RootNamespace>
+    <AssemblyName>DRM.Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BrandTopic.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BrandTopicProperty.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DiyProduct.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DiyRingcare.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DRMModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DRMModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DRMModel.Context.Extensions.cs">
+      <DependentUpon>DRMModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DRMModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DrMobile.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DrMobile.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Favorites.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Goods.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsPropertyValue.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsType.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsTypeProperty.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryLog.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Material.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Measure.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderExcel.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OutStock.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDetail.cs" />
+    <Compile Include="ProductGoodsRelationship.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductImgUrl.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductType.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyType.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyTypeValue.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Storehouse.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_AfterService.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tb_SMSRecord.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tb_SMSRemind.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tb_Special.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tb_SpecialClass.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_AComment.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_activity.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Ad.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_adImage.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_adment.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_adType.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_ArtcleLink.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Article.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_ArticleType.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Card.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Cart.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Category.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_CategoryBAK.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Comment.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Comquestion.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Config.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Configuration.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Config_Bank.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Config_Fee.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Config_Time.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Config_YQ.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_ContentCategory.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_CotentList.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_CountIp.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DarryComment.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DarryHome.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DarryMsg.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Diamonds.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DiySearch.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_DrMan.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Edm.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_EmailResult.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Fee.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_FriendlyLink.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Guest.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_HandSize.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Hodliday.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_IpPromontion.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_KfOnline.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Link.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Loveletter.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_LoveMap.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_LoveZhan.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_mail.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_memAlbum.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Member.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_MemberCollection.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_MemberFriend.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_MemberMsg.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_MemMusic.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_memPhoto.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Message.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Meta.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_ncount.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_news.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_newscategory.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_newslist.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Order.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_OrderDetail.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Order_Log.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Page.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Pairs.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_photoReply.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_picnewslist.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_pink_sale.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Product.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_ProductCate.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_ProductDetail.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_ProductLog.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Product_List.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Promotion.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_ProposeNews.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_QxEmail.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Reception.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Sales.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Send.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_shop.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_ShopItem.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_SpAddress.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Star.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Stat.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_StatDetail.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_SubShop.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_TagWords.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_thekey.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_type.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_User.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_UserDepart.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_UserLog.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Wall.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_WoLog.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Work.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Work_Orders.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_admentInfo.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_AfterServiceMember.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_AfterServiceOrder.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_cart.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_diamond_product.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_diyproduct.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_dproduct.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_Goods.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_GoodsInventory.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_GoodsInventory2.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_GoodsPropertyValue.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_GoodsTypeProperty.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_Inventory.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_InventoryGoods.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_MemberDarryHome.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_MemberDiySearch.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_Member_Pro.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_mOrder.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_myfavorites.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_ordercomment.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_orderdetail.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_orderdetailAfterservice.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_orderdetailnewexl.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_orderdetail_product.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_orderdetail_product2.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_orderdiamond.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_OrderLog.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_OrderMember.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_OutOrderExcel.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_OutStock.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_pinkcustomers.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_Product.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_product2.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_Product3.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_ProductGoodsShip.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_product_dprice.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_ringcare.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_ShopSub.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_User.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_User_Reception.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_workorder.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkDay.cs">
+      <DependentUpon>DRMModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="DrMobile.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DrMobile.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="DRMModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DRMModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="DRMModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DRMModel.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

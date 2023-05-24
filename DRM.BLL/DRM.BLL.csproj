@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{152C917A-B86B-4850-B5DD-CD86F8CC8DBA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DRM.BLL</RootNamespace>
+    <AssemblyName>DRM.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivityBll.cs" />
+    <Compile Include="AfterServiceBLL.cs" />
+    <Compile Include="Cart\CartBLL.cs" />
+    <Compile Include="CommentBLL.cs" />
+    <Compile Include="CustomException\CustomException.cs" />
+    <Compile Include="DarryHomeBLL.cs" />
+    <Compile Include="DiamondBLL.cs" />
+    <Compile Include="FavoritesBLL.cs" />
+    <Compile Include="FeedbackBLL.cs" />
+    <Compile Include="HandSizeBll.cs" />
+    <Compile Include="MemberBLL.cs" />
+    <Compile Include="nCommentBLL.cs" />
+    <Compile Include="NewsBLL.cs" />
+    <Compile Include="Order\OrderBLL.cs" />
+    <Compile Include="Order\OrderStatus.cs" />
+    <Compile Include="PCommentBLL.cs" />
+    <Compile Include="ProposeBLL.cs" />
+    <Compile Include="ProductBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProTypeBll.cs" />
+    <Compile Include="Result\DarryCheckResult.cs" />
+    <Compile Include="Result\ResultMsg.cs" />
+    <Compile Include="SMSRecordBLL.cs" />
+    <Compile Include="SMSRemindBLL.cs" />
+    <Compile Include="SpAddressBLL.cs" />
+    <Compile Include="VisitorMsgEmailBLL.cs" />
+    <Compile Include="WorkDayBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DRM.DAL\DRM.DAL.csproj">
+      <Project>{A79FC184-084E-496D-B929-EFD8898C6D90}</Project>
+      <Name>DRM.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DRM.Entity\DRM.Entity.csproj">
+      <Project>{E6F2B7FE-2BA2-424A-9A34-2022250BB0D0}</Project>
+      <Name>DRM.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DRM.DAL\DRM.DAL.csproj">
+      <Project>{A79FC184-084E-496D-B929-EFD8898C6D90}</Project>
+      <Name>DRM.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DRM.Entity\DRM.Entity.csproj">
+      <Project>{E6F2B7FE-2BA2-424A-9A34-2022250BB0D0}</Project>
+      <Name>DRM.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

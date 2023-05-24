@@ -1,0 +1,12 @@
+D:\c#\drmobile\DRM.BLL\bin\Release\DRM.BLL.dll
+D:\c#\drmobile\DRM.BLL\bin\Release\DRM.BLL.pdb
+D:\c#\drmobile\DRM.BLL\bin\Release\DRM.DAL.dll
+D:\c#\drmobile\DRM.BLL\bin\Release\DRM.Entity.dll
+D:\c#\drmobile\DRM.BLL\bin\Release\DRM.DAL.pdb
+D:\c#\drmobile\DRM.BLL\bin\Release\DRM.Entity.pdb
+D:\c#\drmobile\DRM.BLL\bin\Release\DRM.Entity.dll.config
+D:\c#\drmobile\DRM.BLL\obj\Release\DRM.BLL.csproj.AssemblyReference.cache
+D:\c#\drmobile\DRM.BLL\obj\Release\DRM.BLL.csproj.CoreCompileInputs.cache
+D:\c#\drmobile\DRM.BLL\obj\Release\DRM.BLL.csproj.CopyComplete
+D:\c#\drmobile\DRM.BLL\obj\Release\DRM.BLL.dll
+D:\c#\drmobile\DRM.BLL\obj\Release\DRM.BLL.pdb
